@@ -23,7 +23,7 @@ h3 {
     background-color: #0e101244;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    height: 70px;
+    height: 90px;
     padding: 0 10px;
     position: fixed;
     top: 0;
@@ -93,4 +93,39 @@ nav {
     justify-content: space-between;
     padding-block-start: 20px;
     padding-inline: 15px;
+}
+
+.button {
+    padding-block: 5px;
+    padding-inline-start: 25px;
+    padding-inline-end: 5px;
+    border-radius: 30px;
+    font-size: calc(0.7vw + 10px);
+    border: none;
+    background-color: #fafffd;
+}
+
+.arrow {
+    margin-inline-start: 10px;
+    padding: 12px 16px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 300px;
+    font-weight: lighter;
+    display: inline-block;
+}
+
+.button:is(:hover, :focus, :focus-within) .arrow {
+    rotate: 360deg;
+    transition: rotate 0.2s ease-in-out;
+}
+
+
+@keyframes spin {
+    0% {
+        rotate: 0deg;
+    }
+
+    10% {
+        rotate: 360deg;
+    }
 }
