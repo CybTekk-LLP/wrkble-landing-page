@@ -1,0 +1,86 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #0e1012;
+}
+
+::selection {
+    background-color: #9fff7c40;
+}
+
+h2 {
+    font-size: calc(5vw + 20px);
+    font-weight: 900;
+    color: #fafffd;
+}
+
+h3 {
+    font-size: calc(1.2vw + 5px);
+    color: #c4c4c4;
+    font-weight: 400;
+}
+
+#menu {
+    background-color: transparent;
+    height: 70px;
+    padding: 0 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 12;
+    box-sizing: border-box;
+}
+
+.flip {
+    position: relative;
+    display: inline-flex;
+    margin: 0;
+    vertical-align: top;
+}
+
+.flip .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    padding-block: 12px;
+    background-color: transparent;
+    padding-inline: 40px;
+    border-radius: 300pt;
+    margin-inline-start: calc(2vw - 20px);
+    top: -10px;
+}
+
+.neon {
+    color: #9EFF7C;
+}
+
+.flip .word:has(.letter.in)::after {
+    content: "  ⬝ ";
+    position: absolute;
+    color: #9EFF7C;
+    inset-inline-end: calc(-2vw + 15px);
+}
+
+.flip .word .letter {
+    transform: rotate3d(0deg);
+    transform-origin: center center 25px;
+}
+
+.flip .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.flip .word .letter.in {
+    transition: 0.38s ease;
+}
+
+.flip .word .letter.behind {
+    transform: rotateX(-90deg);
+}
+
+#fp-nav {
+    background-color: #fafffd !important;
+    padding-inline: 12px;
+    padding-block: 40px;
+    border-radius: 300pt;
+}
