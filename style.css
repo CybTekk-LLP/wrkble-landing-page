@@ -20,7 +20,9 @@ h3 {
 }
 
 #menu {
-    background-color: transparent;
+    background-color: #0e101244;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     height: 70px;
     padding: 0 10px;
     position: fixed;
@@ -83,4 +85,12 @@ h3 {
     padding-inline: 12px;
     padding-block: 40px;
     border-radius: 300pt;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block-start: 20px;
+    padding-inline: 30px;
 }
