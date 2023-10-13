@@ -37,6 +37,8 @@ h3 {
     display: inline-flex;
     margin: 0;
     vertical-align: top;
+    color: #9EFF7C;
+    font-family: "Fugaz One", sans-serif;
 }
 
 .flip .word {
@@ -129,3 +131,20 @@ nav {
         rotate: 360deg;
     }
 }
+
+.home {
+    display: flex;
+    align-items: center;
+    width: 50%;
+
+}
+
+/* a-scene {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    display: block;
+    z-index: 5;
+} */
