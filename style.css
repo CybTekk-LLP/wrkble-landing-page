@@ -221,7 +221,7 @@ footer ul {
 }
 
 footer center {
-    font-size: calc(0.6vw + 5px);
+    font-size: max(calc(0.6vw + 5px), 12px);
 }
 
 li:hover {
@@ -248,14 +248,67 @@ footer center {
 
 .go-to-next-page {
     position: absolute;
+    cursor: none;
     width: 70px;
     height: 70px;
     border-radius: 50%;
     background-color: #fafffd;
-    background-image: url(./JoinWrkble.svg);
-    background-size: 100%;
     bottom: 0;
     left: 50%;
     translate: -50% -50%;
+    background-image: url(./JoinWrkble.svg);
+    background-size: 100%;
     text-decoration: none;
+    animation: spin 3s linear 0.5s infinite;
+}
+
+/* .go-to-next-page:hover,
+.next-page:hover+.go-to-next-page {
+    animation-play-state: paused;
+} */
+
+.next-page {
+    position: absolute;
+    height: 30px;
+    bottom: 38px;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 2;
+    pointer-events: none;
+}
+
+@keyframes spin {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes anti-spin {
+    from {
+        rotate: 360deg;
+    }
+
+    to {
+        rotate: 0deg;
+    }
+}
+
+.go-to-next-page img {
+    translate: 25px 20px
+}
+
+@media screen and (orientation: portrait) {
+    .landscape {
+        display: none;
+    }
+}
+
+@media screen and (orientation: landscape) {
+    .portrait {
+        display: none;
+    }
 }
