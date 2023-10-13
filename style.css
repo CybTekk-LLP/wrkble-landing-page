@@ -96,14 +96,14 @@ h3 {
     transform: rotateX(-90deg);
 }
 
-#fp-nav {
+/* #fp-nav {
     background-color: #fafffd !important;
     padding-inline: 12px;
     padding-block: 40px;
     border-radius: 300pt;
     z-index: 5 !important;
     cursor: none !important;
-}
+} */
 
 
 nav {
@@ -126,34 +126,27 @@ nav {
 
 .arrow {
     margin-inline-start: 10px;
-    padding: 12px 16px;
-    background-color: rgb(216, 216, 216);
-    border-radius: 300px;
     font-weight: lighter;
     display: inline-block;
 }
 
-.button:is(:hover, :focus, :focus-within) .arrow {
+.arrow-bg {
+    padding: 12px 16px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 300px;
+}
+
+:where(.button, li):is(:hover, :focus, :focus-within) .arrow {
     rotate: 360deg;
     transition: rotate 0.2s ease-in-out;
 }
 
 
-@keyframes spin {
-    0% {
-        rotate: 0deg;
-    }
-
-    10% {
-        rotate: 360deg;
-    }
-}
-
 .home {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-
+    position: relative;
 }
 
 #cursor {
@@ -184,10 +177,6 @@ nav {
     z-index: 999;
 }
 
-.home {
-    display: grid;
-}
-
 
 .aframebox {
     display: block;
@@ -197,8 +186,76 @@ nav {
 
 .left-container {
     position: relative;
-    display: block;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+
     z-index: 3;
-    width: 50%;
+    width: 100%;
     margin: calc(3vw + 20px);
+}
+
+.footer {
+    position: relative;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    inline-size: 100%;
+    min-block-size: 25vh;
+    background-color: #fafffd;
+    border-radius: 40px 40px 0 0;
+    padding-block: 30px;
+    font-size: calc(0.7vw + 10px);
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul {
+    list-style-type: none;
+    line-height: 2;
+}
+
+footer center {
+    font-size: calc(0.6vw + 5px);
+}
+
+li:hover {
+    display: block;
+    position: relative;
+    scale: 1.05;
+    translate: 1px 1px;
+    transition: scale 0.2s ease-in-out, translate 0.2s ease-in-out;
+}
+
+footer img {
+    padding-inline-start: calc(3vw + 10px);
+}
+
+footer center {
+    padding-block-start: 20px;
+}
+
+
+
+.difference {
+    mix-blend-mode: difference;
+}
+
+.go-to-next-page {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #fafffd;
+    background-image: url(./JoinWrkble.svg);
+    background-size: 100%;
+    bottom: 0;
+    left: 50%;
+    translate: -50% -50%;
+    text-decoration: none;
 }

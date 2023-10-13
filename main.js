@@ -1,9 +1,9 @@
 // fullpage customization
 $("#fullpage").fullpage({
-  sectionsColor: ["#0e1012", "#348899", "#F2AE72", "#5C832F", "#B8B89F"],
+  sectionsColor: ["#0e1012", "#348899", "#F2AE72", "#5C832F", "#0e1012"],
   sectionSelector: ".vertical-scrolling",
   slideSelector: ".horizontal-scrolling",
-  navigation: true,
+  navigation: false,
   slidesNavigation: true,
   controlArrows: false,
   anchors: [

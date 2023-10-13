@@ -16,6 +16,25 @@
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script
         src="https://cdn.rawgit.com/tizzle/aframe-orbit-controls-component/v0.1.14/dist/aframe-orbit-controls-component.min.js"></script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '287494904209200');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=287494904209200&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 
 </head>
 
@@ -25,7 +44,7 @@
             <img src="./wrkble.svg" alt="">
             <button class="button" data-cursor="pointer">
                 Sign In
-                <span class="arrow">↗</span>
+                <span class="arrow  arrow-bg">↗</span>
             </button>
         </nav>
         <div id="cursor"></div>
@@ -66,7 +85,7 @@
                     </a-entity>
                 </a-scene>
             </div>
-
+            <a class="go-to-next-page" href="#secondSection"></a>
         </section>
         <section class="vertical-scrolling about">
             <h2>fullPage.js</h2>
@@ -81,8 +100,33 @@
             <h3>This is the fourth section</h3>
         </section>
         <section class="vertical-scrolling footer">
-            <h2>fullPage.js</h2>
-            <h3>This is the fifth section</h3>
+            <footer data-cursor="pointer3">
+                <img src="./w.svg" alt="">
+
+                <div class="footer-wrapper">
+                    <ul class="start">
+                        <li>linkedIn <span class="arrow">↗</span></li>
+                        <li>instagram <span class="arrow">↗</span></li>
+                        <li>twitter <span class="arrow">↗</span></li>
+                    </ul>
+                    <ul class="center">
+                        <li>FAQ</li>
+                        <li>Terms & Conditions</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                    <div class="end">
+                        <p>Want to know more<br> about us?</p>
+                        <button class="button difference" data-cursor="pointer">
+                            Get In Touch
+                            <span class="arrow arrow-bg">↗</span>
+                        </button>
+                    </div>
+                </div>
+                <center id="insert-year">Wrkble
+                    <script>document.getElementById('insert-year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+                    All Rights Reserved &copy;
+                </center>
+            </footer>
         </section>
     </div>
 </body>

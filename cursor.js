@@ -30,8 +30,13 @@ document.querySelectorAll("[data-cursor]").forEach((item) => {
       cursorBorder.style.mixBlendMode = "difference";
       cursorBorder.style.setProperty("--size", "80px");
     }
+    if (item.dataset.cursor === "pointer3") {
+      cursorBorder.style.boxShadow = "0 0 0 1px black";
+      cursorBorder.style.setProperty("--size", "30px");
+    }
   });
   item.addEventListener("mouseout", (e) => {
+    cursorBorder.style.boxShadow = "0 0 0 1px white";
     cursorBorder.style.backgroundColor = "unset";
     cursorBorder.style.mixBlendMode = "unset";
     cursorBorder.style.setProperty("--size", "50px");
