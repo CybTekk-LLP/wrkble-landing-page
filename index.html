@@ -23,16 +23,18 @@
     <header id="menu">
         <nav>
             <img src="./wrkble.svg" alt="">
-            <button class="button">
+            <button class="button" data-cursor="pointer">
                 Sign In
                 <span class="arrow">↗</span>
             </button>
         </nav>
+        <div id="cursor"></div>
+        <div id="cursor-border"></div>
     </header>
     <div id="fullpage">
         <section class="vertical-scrolling home">
             <div class="left-container">
-                <h2>Get&nbsp;<strong class="flip"><span class="word">Career</span>
+                <h2>Get<strong class="flip" data-cursor="pointer"><span class="word">Career</span>
                         <span class="word">Platform</span>
                         <span class="word">Job</span>
                         <span class="word">Work</span>
@@ -42,8 +44,9 @@
                     now.</h3>
             </div>
             <div class="right-container">
+
                 <a-scene device-orientation-permission-ui="enabled: false" vr-mode-ui="enabled: false" class="aframebox"
-                    embedded renderer="colorManagement: true">
+                    renderer="colorManagement: true">
                     <a-assets>
                         <a-asset-item id="neon" src="./models/scene.gltf"></a-asset-item>
                     </a-assets>
@@ -59,7 +62,7 @@
                             " mouse-cursor="">
                     </a-entity>
                     <a-entity position="0 0.1 0" id="target">
-                        <a-entity gltf-model="#neon" animation-mixer scale="0.1 0.1 0.1" position="0 0 0"></a-entity>
+                        <a-entity gltf-model="#neon" animation-mixer scale="0.13 0.13 0.13" position="0 0 0"></a-entity>
                     </a-entity>
                 </a-scene>
             </div>
@@ -88,5 +91,6 @@
 
 <script src="./main.js"></script>
 <script src="./flip.js"></script>
+<script src="./cursor.js"></script>
 
 </html>
