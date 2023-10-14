@@ -62,13 +62,15 @@ p {
     background-color: #0e101244;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    height: calc(1.3vw + 67px);
-    padding: 0 10px;
+    height: calc(1.3vw + 70px);
+    padding-inline: 10px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 12;
+    padding-block: 3px;
     box-sizing: border-box;
+    border-radius: 0 0 25px 25px;
 }
 
 
@@ -174,7 +176,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-block-start: 10px;
+    padding-block-start: 12px;
     padding-inline: 45px;
 
 }
@@ -609,7 +611,7 @@ footer center {
     }
 
     .arrow {
-        font-weight: bolder;
+        font-weight: normal;
         font-size: 13px;
     }
 
@@ -646,7 +648,7 @@ footer center {
     }
 
     .home .content-container h2 {
-        padding-block-end: 26px;
+        padding-block-end: 2px;
     }
 
     .cards-container {
