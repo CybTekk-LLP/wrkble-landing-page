@@ -141,7 +141,7 @@ p {
     content: ".";
     position: absolute;
     color: #38571a;
-    inset-inline-end: calc(-2vw + 15px);
+    inset-inline-end: calc(-2vw + 28px);
 }
 
 .flip :is(.word, .word2) .letter {
