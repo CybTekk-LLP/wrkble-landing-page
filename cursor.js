@@ -34,6 +34,14 @@ document.querySelectorAll("[data-cursor]").forEach((item) => {
       cursorBorder.style.boxShadow = "0 0 0 1px black";
       cursorBorder.style.setProperty("--size", "30px");
     }
+    if (item.dataset.cursor === "pointer4") {
+      cursorBorder.style.boxShadow = "0 0 0 4px #9EFF7C";
+      cursorBorder.style.setProperty("--size", "70px");
+    }
+    if (item.dataset.cursor === "pointer5") {
+      cursorBorder.style.boxShadow = "0 0 0 4px #1F2F1E";
+      cursorBorder.style.setProperty("--size", "70px");
+    }
   });
   item.addEventListener("mouseout", (e) => {
     cursorBorder.style.boxShadow = "0 0 0 1px white";

@@ -6,13 +6,7 @@ $("#fullpage").fullpage({
   navigation: false,
   slidesNavigation: true,
   controlArrows: false,
-  anchors: [
-    "firstSection",
-    "secondSection",
-    "thirdSection",
-    "fourthSection",
-    "fifthSection",
-  ],
+  anchors: ["home", "about", "featured", "pricing", "contact"],
   menu: "#menu",
   afterLoad: function (anchorLink, index) {},
 

@@ -52,25 +52,34 @@
     </header>
     <div id="fullpage">
         <section class="vertical-scrolling home">
-            <div class="left-container">
+            <div class="content-container">
                 <h2>Get<strong class="flip" data-cursor="pointer"><span class="word">Career</span>
                         <span class="word">Platform</span>
                         <span class="word">Job</span>
                         <span class="word">Work</span>
-                        <span class="word">Set</span></strong><br> Ready </h2>
-                <h3>With courses that transform your underlying potential to workable industry talent, you are
+                        <span class="word">Future</span></strong><br> Ready </h2>
+                <h3>With courses that transform your underlying potential <br>to workable industry talent, you are
                     unstoppable
-                    now.</h3>
-            </div>
-            <div class="right-container">
+                    now.
+                    <br><br>
+                    <button class="button neon" data-cursor="pointer">
+                        Join Now
+                        <span class="arrow arrow-bg">↗</span>
+                    </button>
 
-                <a-scene device-orientation-permission-ui="enabled: false" vr-mode-ui="enabled: false" class="aframebox"
-                    renderer="colorManagement: true">
+                </h3>
+
+            </div>
+            <div class="model-container">
+                <div class="disable" draggable="false"></div>
+                <a-scene background="color: #0e1012" device-orientation-permission-ui="enabled: false"
+                    vr-mode-ui="enabled: false" class="aframebox" renderer="colorManagement: true">
                     <a-assets>
                         <a-asset-item id="neon" src="./models/scene.gltf"></a-asset-item>
                     </a-assets>
 
-                    <a-entity id="camera" camera="fov: 80; zoom: 1;" position="0 0 0" orbit-controls="
+                    <a-entity touchEnabled="false" wasd-controls-enabled="false" look-controls-enabled="false"
+                        touchEnabled="false" id="camera" camera="fov: 80; zoom: 1;" position="0 2 5" orbit-controls="
                             autoRotate: false;
                             target: #target;
                             enableDamping: true;
@@ -78,20 +87,27 @@
                             rotateSpeed:0.25;
                             minDistance:3;
                             maxDistance:100;
-                            " mouse-cursor="">
+                            ">
                     </a-entity>
-                    <a-entity position="0 0.1 0" id="target">
-                        <a-entity gltf-model="#neon" animation-mixer scale="0.13 0.13 0.13" position="0 0 0"></a-entity>
+                    <a-entity position="-4.5 0.1 0" id="target">
+                        <a-entity gltf-model="#neon" animation-mixer scale="2 2 2" position="4 -1 2.2"></a-entity>
                     </a-entity>
                 </a-scene>
             </div>
 
             <img class="next-page" src="./DownArrow.svg" alt="" height="30px">
-            <a data-cursor="pointer3" class="go-to-next-page" href="#secondSection">
+            <img class="plank" src="./plank.svg" alt="" srcset="">
+            <a data-cursor="pointer" class="go-to-next-page" href="#about">
             </a>
+            <div class="lights"></div>
+            <div class="cards">
+                <a href="#pricing"><img data-cursor="pointer4" class="pro" src="./pro.png" alt="" height="250px"></a>
+                <a href="#pricing"><img data-cursor="pointer5" class="lrn" src="./lrn.png" alt="" height="250px"></a>
+            </div>
         </section>
         <section class="vertical-scrolling about">
             <h2>fullPage.js</h2>
+
             <h3>This is the second section</h3>
         </section>
         <section class="vertical-scrolling featured">
