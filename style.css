@@ -360,8 +360,6 @@ footer center {
     translate: -50% -50%;
     z-index: 2;
     pointer-events: none;
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
     border-radius: 100px;
 }
 
@@ -679,6 +677,11 @@ footer center {
 @media screen and (orientation: landscape) {
     .portrait {
         display: none;
+    }
+
+    .plank {
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
     }
 
     .cards-container::-webkit-scrollbar {
