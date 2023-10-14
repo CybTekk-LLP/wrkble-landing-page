@@ -433,22 +433,21 @@ footer center {
 .about {
     position: relative;
     width: 100vw;
-    overflow-x: scroll;
 }
 
 .cards-container {
-    width: max-content;
+    width: 100%;
     min-width: auto;
     position: absolute;
     bottom: 30px;
     left: 0;
     display: flex;
     gap: 80px;
-    justify-content: center;
     scale: 0.8;
-
+    height: 350px;
     flex-wrap: nowrap;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: hidden;
 }
 
 :where(.card2, .card1, .card3) :is(h4, p) {
@@ -458,6 +457,7 @@ footer center {
 .card2 {
     background-image: url(./card2.svg);
     width: 418px;
+    min-width: 418px;
     height: 341px;
     position: relative;
 }
@@ -470,6 +470,7 @@ footer center {
 .card1 {
     background-image: url(./card1.svg);
     width: 418px;
+    min-width: 418px;
     height: 341px;
     position: relative;
 }
@@ -477,6 +478,7 @@ footer center {
 .card3 {
     background-image: url(./card2.svg);
     width: 418px;
+    min-width: 418px;
     height: 341px;
     position: relative;
 }
