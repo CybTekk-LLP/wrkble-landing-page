@@ -101,6 +101,7 @@ p {
     position: absolute;
     display: block;
     left: 0;
+    pointer-events: none;
 }
 
 .bottom {
@@ -437,7 +438,9 @@ footer center {
     background-image: url(./card2.svg);
     width: 418px;
     height: 341px;
+    position: relative;
 }
+
 
 .card1 h4 {
     margin-top: 140px;
@@ -447,15 +450,119 @@ footer center {
     background-image: url(./card1.svg);
     width: 418px;
     height: 341px;
-
+    position: relative;
 }
 
 .card3 {
     background-image: url(./card2.svg);
     width: 418px;
     height: 341px;
+    position: relative;
 }
 
+.card1::after {
+    position: absolute;
+    content: url(./arrow2Card.svg);
+    right: 0;
+    top: 0;
+    transition: rotate 0.4s ease;
+    scale: 0.6;
+}
+
+.card2::before {
+    position: absolute;
+    content: url(./asterisk.svg);
+    left: 0;
+    bottom: 0;
+    animation: rotate 30s linear infinite;
+    animation-play-state: paused;
+    scale: 0.6;
+    transition: all 0.4s ease;
+}
+
+.card1::before {
+    position: absolute;
+    content: url(./cylinder.svg);
+    left: 0;
+    top: 0;
+    rotate: 30deg;
+    animation: rotate 30s linear infinite;
+    animation-play-state: paused;
+    scale: 0.6;
+    transition: all 0.4s ease;
+}
+
+.card3::before {
+    position: absolute;
+    content: url(./chain.svg);
+    left: 0;
+    bottom: 0;
+    animation: rotate 30s linear infinite;
+    animation-play-state: paused;
+    scale: 0.6;
+    transition: all 0.4s ease;
+
+}
+
+.card2::after {
+    position: absolute;
+    content: url(./arrow1Card.svg);
+    right: 0;
+    bottom: 0;
+    transition: rotate 0.4s ease;
+    scale: 0.6;
+}
+
+.card3::after {
+    position: absolute;
+    content: url(./arrow1Card.svg);
+    right: 0;
+    bottom: 0;
+    transition: rotate 0.4s ease;
+    scale: 0.6;
+}
+
+.card3:hover::before {
+    position: absolute;
+    content: url(./chain3d.png);
+    left: 0;
+    bottom: 0;
+    scale: 1;
+    animation-play-state: running;
+}
+
+.card2:hover::before {
+    position: absolute;
+    content: url(./asterisk3d.png);
+    left: 0;
+    bottom: 0;
+    scale: 1;
+    animation-play-state: running;
+}
+
+.card1:hover::before {
+    position: absolute;
+    content: url(./cylinder3d.png);
+    left: 0;
+    top: 0;
+    scale: 1;
+    animation-play-state: running;
+}
+
+
+@keyframes rotate {
+    from {
+        rotate: 0deg;
+    }
+
+    to {
+        rotate: 360deg
+    }
+}
+
+:where(.card1, .card2, .card3):hover::after {
+    rotate: 45deg;
+}
 
 @media screen and (orientation: portrait) {
     .landscape {
