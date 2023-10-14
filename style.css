@@ -78,9 +78,7 @@ p {
     font-family: "Fugaz One", sans-serif;
 }
 
-.about .flip {
-    color: #38571a;
-}
+
 
 .flip :is(.word, .word2) {
     position: absolute;
@@ -94,6 +92,12 @@ p {
     top: -10px;
     transform: skew(5deg);
     -webkit-transform: skew(5deg);
+}
+
+.about .flip {
+    color: #38571a;
+    padding-block: 36px;
+    margin-inline-start: calc(1.9vw - 24px);
 }
 
 .neon {
@@ -272,6 +276,7 @@ footer {
 footer ul {
     list-style-type: none;
     line-height: 2;
+    padding-inline-start: 20px;
 }
 
 footer center {
@@ -585,6 +590,11 @@ footer center {
 @media screen and (orientation: portrait) {
     .landscape {
         display: none;
+    }
+
+    nav {
+        padding-inline: 25px;
+
     }
 
     .content-container {
