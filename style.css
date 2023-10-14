@@ -78,6 +78,10 @@ p {
     font-family: "Fugaz One", sans-serif;
 }
 
+.about .flip {
+    color: #38571a;
+}
+
 .flip :is(.word, .word2) {
     position: absolute;
     display: flex;
@@ -124,7 +128,7 @@ p {
 .flip .word2:has(.letter.in)::after {
     content: ".";
     position: absolute;
-    color: #9EFF7C;
+    color: #38571a;
     inset-inline-end: calc(-2vw + 15px);
 }
 
@@ -282,8 +286,11 @@ li:hover {
     transition: scale 0.2s ease-in-out, translate 0.2s ease-in-out;
 }
 
-footer img {
-    padding-inline-start: calc(3vw + 10px);
+footer .logo-mini {
+    padding: 20px 10px;
+    margin-inline-start: calc(0.4vw + 20px);
+    border-radius: 20px;
+    background-color: #141515;
 }
 
 footer center {
@@ -420,10 +427,13 @@ footer center {
 
 .about {
     position: relative;
+    width: 100vw;
+    overflow-x: scroll;
 }
 
 .cards-container {
-    min-width: 100vw;
+    width: max-content;
+    min-width: auto;
     position: absolute;
     bottom: 30px;
     left: 0;
@@ -431,7 +441,9 @@ footer center {
     gap: 80px;
     justify-content: center;
     scale: 0.8;
-    overflow-x: scroll;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
 }
 
 :where(.card2, .card1, .card3) :is(h4, p) {
@@ -567,6 +579,8 @@ footer center {
 :where(.card1, .card2, .card3):hover::after {
     rotate: 45deg;
 }
+
+
 
 @media screen and (orientation: portrait) {
     .landscape {
