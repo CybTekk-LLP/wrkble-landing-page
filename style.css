@@ -49,6 +49,10 @@ p {
     line-height: 1.8;
 }
 
+.footer p {
+    color: #0e1012;
+}
+
 #menu {
     background-color: #0e101244;
     -webkit-backdrop-filter: blur(20px);
@@ -112,7 +116,7 @@ p {
     top: 0;
 }
 
-.center {
+.center-left {
     top: 50%;
     filter: blur(200px);
 }
