@@ -11,6 +11,10 @@ body {
     cursor: none;
 }
 
+section {
+    overflow: hidden !important;
+}
+
 a {
     cursor: none;
 }
@@ -422,11 +426,16 @@ footer center {
     color: #0e1012;
 }
 
+.featured h2 {
+    scale: 0.7;
+    transform-origin: 0;
+}
+
 .about h3 {
     color: #2e2f2f;
 }
 
-.about .content-container {
+:is(.about, .featured) .content-container {
     margin-top: -30vh;
 }
 
