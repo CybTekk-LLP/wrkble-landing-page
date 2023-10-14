@@ -11,22 +11,26 @@ body {
     cursor: none;
 }
 
+a {
+    cursor: none;
+}
+
 ::selection {
     background-color: #9fff7c40;
 }
 
-/* .home {
+.home {
     overflow: hidden;
-} */
+}
 
-.home h2 {
+h2 {
     font-size: max(calc(4vw + 16px), 24px);
     font-weight: 900;
     color: #fafffd;
     margin-block-start: 0;
 }
 
-.home h3 {
+h3 {
     font-size: max(12px, calc(1vw + 4px));
     color: #a3a2a2;
     font-weight: 400;
@@ -59,7 +63,7 @@ body {
     font-family: "Fugaz One", sans-serif;
 }
 
-.flip .word {
+.flip :is(.word, .word2) {
     position: absolute;
     display: flex;
     opacity: 0;
@@ -85,33 +89,39 @@ body {
     filter: blur(500px);
     position: absolute;
     display: block;
-    bottom: 0;
     left: 0;
 }
 
+.bottom {
+    bottom: 0;
+}
 
-/* .flip .word:has(.letter.in)::after {
-    content: "  ⬝ ";
+.top {
+    top: 0;
+}
+
+.flip .word2:has(.letter.in)::after {
+    content: ".";
     position: absolute;
     color: #9EFF7C;
     inset-inline-end: calc(-2vw + 15px);
-} */
+}
 
-.flip .word .letter {
+.flip :is(.word, .word2) .letter {
     transform: rotate3d(0deg);
     transform-origin: center center 25px;
 }
 
-.flip .word .letter.out {
+.flip :is(.word, .word2) .letter.out {
     transform: rotateX(90deg);
     transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
 }
 
-.flip .word .letter.in {
+.flip :is(.word, .word2) .letter.in {
     transition: 0.38s ease;
 }
 
-.flip .word .letter.behind {
+.flip :is(.word, .word2) .letter.behind {
     transform: rotateX(-90deg);
 }
 
@@ -310,6 +320,7 @@ footer center {
     pointer-events: none;
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+    border-radius: 100px;
 }
 
 .cards {
@@ -370,6 +381,11 @@ footer center {
     display: block;
     z-index: 1;
 
+}
+
+.about h2 {
+    scale: 0.7;
+    transform-origin: 0;
 }
 
 @media screen and (orientation: portrait) {
