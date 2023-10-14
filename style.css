@@ -195,6 +195,7 @@ nav {
     margin-inline-start: 10px;
     font-weight: lighter;
     display: inline-block;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 .arrow-bg {
