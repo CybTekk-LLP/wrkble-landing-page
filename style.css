@@ -55,6 +55,7 @@ p {
 
 .footer p {
     color: #0e1012;
+    margin-inline-start: 7px;
 }
 
 #menu {
@@ -100,7 +101,8 @@ p {
 
 .about .flip {
     color: #38571a;
-    padding-block: 36px;
+    padding-block-start: 36px;
+    padding-block-end: 0;
     margin-inline-start: calc(1.9vw - 24px);
 }
 
@@ -174,6 +176,7 @@ nav {
     justify-content: space-between;
     padding-block-start: 20px;
     padding-inline: 45px;
+
 }
 
 .button {
@@ -605,9 +608,26 @@ footer center {
         display: none;
     }
 
+    .arrow {
+        font-weight: bolder;
+        font-size: 13px;
+    }
+
+    .about h3 {
+        width: 80vw;
+        word-wrap: break-word;
+    }
+
+    .footer .start.portrait {
+        position: absolute;
+        display: flex;
+        top: 30px;
+        gap: 40px;
+        align-items: center;
+    }
+
     nav {
         padding-inline: 25px;
-
     }
 
     .content-container {
@@ -621,8 +641,20 @@ footer center {
         margin-block-start: 0;
     }
 
+    .home .content-container {
+        margin-block-start: -15vh;
+    }
+
+    .home .content-container h2 {
+        padding-block-end: 26px;
+    }
+
     .cards-container {
-        scrollbar-width: auto
+        scrollbar-width: auto;
+    }
+
+    .cards-container .card-item {
+        scale: 0.82
     }
 
     .cards-container::-webkit-scrollbar {
