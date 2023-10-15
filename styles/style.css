@@ -801,6 +801,8 @@ footer center {
     animation-duration: 45s;
     animation-delay: -4.2s;
     transform-origin: -9vw 15vh;
+    display: block;
+    z-index: 3;
 }
 
 .shape2 {
@@ -825,6 +827,8 @@ footer center {
     animation-duration: 75s;
     animation-delay: -3.2s;
     transform-origin: -6vw 14vh;
+    display: block;
+    z-index: 3;
 }
 
 .shape5 {
@@ -849,6 +853,8 @@ footer center {
     animation-duration: 70s;
     animation-delay: -4.2s;
     transform-origin: -8vw 13vh;
+    display: block;
+    z-index: 3;
 }
 
 .shape8 {
