@@ -346,7 +346,7 @@ footer center {
     bottom: 0;
     left: 50%;
     translate: -50% -50%;
-    background-image: url(./assets/JoinWrkble.svg);
+    background-image: url(../assets/JoinWrkble.svg);
     background-size: 100%;
     text-decoration: none;
     animation: spin 3s linear 0.5s infinite;
@@ -489,7 +489,7 @@ footer center {
 }
 
 .card2 {
-    background-image: url(./assets/card2.svg);
+    background-image: url(../assets/card2.svg);
     width: 418px;
     min-width: 418px;
     height: 341px;
@@ -502,7 +502,7 @@ footer center {
 }
 
 .card1 {
-    background-image: url(./assets/card1.svg);
+    background-image: url(../assets/card1.svg);
     width: 418px;
     min-width: 418px;
     height: 341px;
@@ -510,7 +510,7 @@ footer center {
 }
 
 .card3 {
-    background-image: url(./assets/card2.svg);
+    background-image: url(../assets/card2.svg);
     width: 418px;
     min-width: 418px;
     height: 341px;
@@ -519,7 +519,7 @@ footer center {
 
 .card1::after {
     position: absolute;
-    content: url(./assets/arrow2Card.svg);
+    content: url(../assets/arrow2Card.svg);
     right: 0;
     top: 0;
     transition: rotate 0.4s ease;
@@ -528,7 +528,7 @@ footer center {
 
 .card2::before {
     position: absolute;
-    content: url(./assets/asterisk.svg);
+    content: url(../assets/asterisk.svg);
     left: 0;
     bottom: 0;
     animation: rotate 30s linear infinite;
@@ -539,7 +539,7 @@ footer center {
 
 .card1::before {
     position: absolute;
-    content: url(./assets/cylinder.svg);
+    content: url(../assets/cylinder.svg);
     left: 0;
     top: 0;
     rotate: 30deg;
@@ -551,7 +551,7 @@ footer center {
 
 .card3::before {
     position: absolute;
-    content: url(./assets/chain.svg);
+    content: url(../assets/chain.svg);
     left: 0;
     bottom: 0;
     animation: rotate 30s linear infinite;
@@ -563,7 +563,7 @@ footer center {
 
 .card2::after {
     position: absolute;
-    content: url(./assets/arrow1Card.svg);
+    content: url(../assets/arrow1Card.svg);
     right: 0;
     bottom: 0;
     transition: rotate 0.4s ease;
@@ -572,7 +572,7 @@ footer center {
 
 .card3::after {
     position: absolute;
-    content: url(./assets/arrow1Card.svg);
+    content: url(../assets/arrow1Card.svg);
     right: 0;
     bottom: 0;
     transition: rotate 0.4s ease;
@@ -581,7 +581,7 @@ footer center {
 
 .card3:hover::before {
     position: absolute;
-    content: url(./assets/chain3d.png);
+    content: url(../assets/chain3d.png);
     left: 0;
     bottom: 0;
     scale: 1;
@@ -590,7 +590,7 @@ footer center {
 
 .card2:hover::before {
     position: absolute;
-    content: url(./assets/asterisk3d.png);
+    content: url(../assets/asterisk3d.png);
     left: 0;
     bottom: 0;
     scale: 1;
@@ -599,7 +599,7 @@ footer center {
 
 .card1:hover::before {
     position: absolute;
-    content: url(./assets/cylinder3d.png);
+    content: url(../assets/cylinder3d.png);
     left: 0;
     top: 0;
     scale: 1;
@@ -737,7 +737,7 @@ footer center {
 .featured-card::before {
     position: absolute;
     top: 15px;
-    content: url(./assets/dots.svg);
+    content: url(../assets/dots.svg);
     left: 15px;
     opacity: 0.16;
     transition: opacity 0.6s ease;
@@ -746,7 +746,7 @@ footer center {
 .featured-card::after {
     position: absolute;
     top: 55px;
-    content: url(./assets/dots.svg);
+    content: url(../assets/dots.svg);
     right: 15px;
     opacity: 0.16;
     transition: opacity 0.6s ease;
@@ -818,7 +818,6 @@ footer center {
     padding: 50px;
     scale: 0.82;
     transform-origin: bottom;
-    margin-bottom: 25px;
     transition: scale 0.4s ease;
     scroll-snap-align: center;
 
@@ -1015,6 +1014,10 @@ footer center {
         border-radius: 20px;
     }
 
+    .pricing-card {
+        margin-bottom: 25px;
+    }
+
 
 }
 
@@ -1026,6 +1029,10 @@ footer center {
 
     .pricing-card:hover {
         scale: 0.86;
+    }
+
+    .pricing-container {
+        justify-content: center;
     }
 
     .pricing-card:hover .button img {
