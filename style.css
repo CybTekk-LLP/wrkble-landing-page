@@ -773,6 +773,7 @@ footer center {
     gap: 50px;
     flex-wrap: nowrap;
     bottom: 0;
+    border-radius: 50px;
     left: 0;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -803,6 +804,7 @@ footer center {
     gap: 50px;
     flex-wrap: nowrap;
     bottom: 0;
+    border-radius: 50px;
     left: 0;
     overflow-x: scroll;
     overflow-y: hidden;
@@ -814,6 +816,11 @@ footer center {
     width: max-content;
     border-radius: 40px;
     padding: 50px;
+    scale: 0.82;
+    transform-origin: bottom;
+    margin-bottom: 25px;
+    transition: scale 0.4s ease;
+    scroll-snap-align: start;
 
 }
 
@@ -895,6 +902,12 @@ footer center {
     font-weight: bolder;
 }
 
+.pricing-card .pricing-button img {
+    opacity: 0.6;
+    mix-blend-mode: lighten;
+    transition: opacity 0.4s ease
+}
+
 .pricing-card.lrn {
     background-color: #9EFF7C;
 }
@@ -905,8 +918,18 @@ footer center {
 }
 
 @media screen and (height < 700px) {
+
     .featured .content-container {
         margin-block-start: -37vh;
+    }
+
+    .pricing .content-container {
+        margin-block-start: -37vh;
+    }
+
+    .pricing .pricing-container {
+        transform-origin: bottom;
+        margin-bottom: 25px;
     }
 
     .small-height {
@@ -968,7 +991,8 @@ footer center {
     }
 
     .featured-container,
-    .cards-container {
+    .cards-container,
+    .pricing-container {
         scrollbar-width: auto;
     }
 
@@ -977,16 +1001,16 @@ footer center {
         scroll-snap-align: start
     }
 
-    :is(.cards-container, .featured-container)::-webkit-scrollbar {
+    :is(.cards-container, .featured-container, .pricing-container)::-webkit-scrollbar {
         width: 10px;
     }
 
-    :is(.cards-container, .featured-container)::-webkit-scrollbar-track {
+    :is(.cards-container, .featured-container, .pricing-container)::-webkit-scrollbar-track {
         background: #0e1012;
         border-radius: 20px;
     }
 
-    :is(.cards-container, .featured-container)::-webkit-scrollbar-thumb {
+    :is(.cards-container, .featured-container, .pricing-container)::-webkit-scrollbar-thumb {
         background: linear-gradient(to right, rgb(158, 255, 124), rgb(255, 252, 65));
         border-radius: 20px;
     }
@@ -995,8 +1019,17 @@ footer center {
 }
 
 @media screen and (orientation: landscape) {
+
     .featured-card:hover {
         scale: 0.93;
+    }
+
+    .pricing-card:hover {
+        scale: 0.86;
+    }
+
+    .pricing-card:hover .button img {
+        opacity: 1;
     }
 
     .portrait {
@@ -1008,11 +1041,11 @@ footer center {
         backdrop-filter: blur(5px);
     }
 
-    :is(.cards-container, .featured-container)::-webkit-scrollbar {
+    :is(.cards-container, .featured-container, .pricing-container)::-webkit-scrollbar {
         width: 0;
     }
 
-    :is(.cards-container, .featured-container) {
+    :is(.cards-container, .featured-container, .pricing-container) {
         scrollbar-width: none
     }
 
