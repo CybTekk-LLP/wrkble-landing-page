@@ -306,7 +306,7 @@ footer center {
     font-size: max(calc(0.6vw + 5px), 12px);
 }
 
-li:hover {
+footer li:hover {
     display: block;
     position: relative;
     scale: 1.05;
@@ -792,6 +792,98 @@ footer center {
     width: 60%;
     word-wrap: break-word;
 
+}
+
+.pricing-container {
+    width: 100%;
+    position: absolute;
+    min-width: auto;
+    scale: 0.8;
+    display: flex;
+    gap: 50px;
+    flex-wrap: nowrap;
+    bottom: 0;
+    left: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.pricing-card {
+    min-width: 350px;
+    width: max-content;
+    border-radius: 40px;
+    padding: 50px;
+
+}
+
+.pricing-card h4 {
+    margin: 0;
+    font-size: 42px;
+}
+
+.pricing-card.lrn h4 {
+    color: #313131;
+}
+
+.pricing-card.pro h4 {
+    color: #BEBEBE;
+}
+
+.pricing-card h2 {
+    font-size: 58px;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-card.lrn h2 {
+    color: #232323;
+}
+
+.pricing-card.pro h2 {
+    color: #fafffd;
+}
+
+.pricing-card h2 .smaller {
+    font-size: 36px;
+    color: #545454;
+}
+
+.pricing-card p {
+    margin: 10px;
+    font-size: 18px;
+    color: #545454;
+    font-weight: bolder;
+}
+
+.pricing-card p .darker {
+    color: #232323;
+}
+
+.pricing-card .benefits {
+    margin-top: 20px;
+}
+
+.pricing-card .benefits ul li {
+    line-height: 2;
+    color: #545454;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.pricing-card .pricing-button {
+    background-color: #86C070;
+    color: #354330;
+    font-weight: bolder;
+}
+
+.pricing-card.lrn {
+    background-color: #9EFF7C;
+}
+
+.pricing-card.pro {
+    background-image: linear-gradient(to right bottom, rgb(28, 36, 25), rgb(30, 41, 27));
+    border: 2px solid #9EFF7C;
 }
 
 @media screen and (height < 700px) {
