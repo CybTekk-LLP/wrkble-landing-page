@@ -1002,7 +1002,7 @@ footer center {
 .pricing-card .pricing-button img {
     opacity: 0.6;
     mix-blend-mode: lighten;
-    transition: opacity 0.4s ease
+    transition: opacity 0.4s ease, rotate 0.2s ease-in-out
 }
 
 .pricing-card.lrn {
