@@ -86,6 +86,12 @@ p {
     font-family: "Fugaz One", sans-serif;
 }
 
+.special-font {
+    color: #9EFF7C;
+    font-family: "Fugaz One", sans-serif;
+    transform: skew(5deg);
+    -webkit-transform: skew(5deg);
+}
 
 
 .flip :is(.word, .word2) {
