@@ -665,12 +665,22 @@ footer center {
     margin-right: auto;
     border: none;
     font-weight: 500;
-    padding-block: 2px 5px;
+    padding-block: 3px 5px;
 }
 
 .featured-content p.beginner {
     color: #91F581;
     background-color: #263220;
+}
+
+.featured-content p.intermediate {
+    color: #CEDD6A;
+    background-color: #2F2C1E;
+}
+
+.featured-content p.advanced {
+    color: #E97070;
+    background-color: #2F1E1E;
 }
 
 .featured-content h2 {
