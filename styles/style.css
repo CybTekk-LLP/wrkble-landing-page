@@ -865,6 +865,25 @@ footer center {
     transform-origin: -13vw 13vh;
 }
 
+.shape9 {
+    top: 10%;
+    left: 2%;
+    animation-duration: 60s;
+    animation-delay: -1.2s;
+    transform-origin: -6vw 23vh;
+}
+
+.shape10 {
+    top: 90%;
+    left: 90%;
+    animation-duration: 40s;
+    animation-delay: -2.2s;
+    transform-origin: -20vw 33vh;
+    display: block;
+    z-index: 3;
+}
+
+
 
 @keyframes move {
     100% {
