@@ -717,7 +717,7 @@ footer center {
     text-align: center;
     scale: 0.9;
     transition: scale 0.4s ease;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
     margin-block-end: 5px;
 }
 
@@ -820,7 +820,7 @@ footer center {
     transform-origin: bottom;
     margin-bottom: 25px;
     transition: scale 0.4s ease;
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 
 }
 
@@ -891,8 +891,8 @@ footer center {
 }
 
 .pricing-card.lrn .pricing-button {
-    background-color: #86C070;
-    color: #354330;
+    background-color: #97d57e;
+    color: #2e3f27;
     font-weight: bolder;
 }
 
@@ -998,7 +998,7 @@ footer center {
 
     .cards-container .card-item {
         scale: 0.82;
-        scroll-snap-align: start
+        scroll-snap-align: center
     }
 
     :is(.cards-container, .featured-container, .pricing-container)::-webkit-scrollbar {
