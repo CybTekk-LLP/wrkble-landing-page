@@ -20,6 +20,10 @@ a {
     text-decoration: none;
 }
 
+button {
+    cursor: none;
+}
+
 ::selection {
     background-color: #9fff7c40;
 }
