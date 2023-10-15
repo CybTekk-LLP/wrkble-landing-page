@@ -17,6 +17,7 @@ section {
 
 a {
     cursor: none;
+    text-decoration: none;
 }
 
 ::selection {
@@ -602,6 +603,52 @@ footer center {
     rotate: 45deg;
 }
 
+.button-flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex2 {
+    gap: 20px;
+}
+
+.flex1 {
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+}
+
+
+.button-flex span {
+    flex: 1;
+    text-align: center;
+}
+
+.button-flex:hover img {
+    rotate: 360deg;
+    transition: rotate 0.2s ease-in-out;
+}
+
+.tag-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tag {
+    border-radius: 50px;
+    padding: 1px 18px;
+    border: 1px solid #0e1012;
+    color: #0e1012;
+}
+
+.featured-card {
+    width: 350px;
+    max-width: 100%;
+    background-color: #fafffd;
+    color: #0e1012;
+}
 
 
 @media screen and (orientation: portrait) {
