@@ -333,7 +333,7 @@ footer center {
     bottom: 0;
     left: 50%;
     translate: -50% -50%;
-    background-image: url(./JoinWrkble.svg);
+    background-image: url(./assets/JoinWrkble.svg);
     background-size: 100%;
     text-decoration: none;
     animation: spin 3s linear 0.5s infinite;
@@ -470,7 +470,7 @@ footer center {
 }
 
 .card2 {
-    background-image: url(./card2.svg);
+    background-image: url(./assets/card2.svg);
     width: 418px;
     min-width: 418px;
     height: 341px;
@@ -483,7 +483,7 @@ footer center {
 }
 
 .card1 {
-    background-image: url(./card1.svg);
+    background-image: url(./assets/card1.svg);
     width: 418px;
     min-width: 418px;
     height: 341px;
@@ -491,7 +491,7 @@ footer center {
 }
 
 .card3 {
-    background-image: url(./card2.svg);
+    background-image: url(./assets/card2.svg);
     width: 418px;
     min-width: 418px;
     height: 341px;
@@ -500,7 +500,7 @@ footer center {
 
 .card1::after {
     position: absolute;
-    content: url(./arrow2Card.svg);
+    content: url(./assets/arrow2Card.svg);
     right: 0;
     top: 0;
     transition: rotate 0.4s ease;
@@ -509,7 +509,7 @@ footer center {
 
 .card2::before {
     position: absolute;
-    content: url(./asterisk.svg);
+    content: url(./assets/asterisk.svg);
     left: 0;
     bottom: 0;
     animation: rotate 30s linear infinite;
@@ -520,7 +520,7 @@ footer center {
 
 .card1::before {
     position: absolute;
-    content: url(./cylinder.svg);
+    content: url(./assets/cylinder.svg);
     left: 0;
     top: 0;
     rotate: 30deg;
@@ -532,7 +532,7 @@ footer center {
 
 .card3::before {
     position: absolute;
-    content: url(./chain.svg);
+    content: url(./assets/chain.svg);
     left: 0;
     bottom: 0;
     animation: rotate 30s linear infinite;
@@ -544,7 +544,7 @@ footer center {
 
 .card2::after {
     position: absolute;
-    content: url(./arrow1Card.svg);
+    content: url(./assets/arrow1Card.svg);
     right: 0;
     bottom: 0;
     transition: rotate 0.4s ease;
@@ -553,7 +553,7 @@ footer center {
 
 .card3::after {
     position: absolute;
-    content: url(./arrow1Card.svg);
+    content: url(./assets/arrow1Card.svg);
     right: 0;
     bottom: 0;
     transition: rotate 0.4s ease;
@@ -562,7 +562,7 @@ footer center {
 
 .card3:hover::before {
     position: absolute;
-    content: url(./chain3d.png);
+    content: url(./assets/chain3d.png);
     left: 0;
     bottom: 0;
     scale: 1;
@@ -571,7 +571,7 @@ footer center {
 
 .card2:hover::before {
     position: absolute;
-    content: url(./asterisk3d.png);
+    content: url(./assets/asterisk3d.png);
     left: 0;
     bottom: 0;
     scale: 1;
@@ -580,7 +580,7 @@ footer center {
 
 .card1:hover::before {
     position: absolute;
-    content: url(./cylinder3d.png);
+    content: url(./assets/cylinder3d.png);
     left: 0;
     top: 0;
     scale: 1;
