@@ -826,10 +826,6 @@ footer center {
     color: #313131;
 }
 
-.pricing-card.pro h4 {
-    color: #BEBEBE;
-}
-
 .pricing-card h2 {
     font-size: 58px;
     margin: 0;
@@ -849,6 +845,10 @@ footer center {
     color: #545454;
 }
 
+.pricing-card.pro .smaller {
+    color: #BEBEBE;
+}
+
 .pricing-card p {
     margin: 10px;
     font-size: 18px;
@@ -856,8 +856,16 @@ footer center {
     font-weight: bolder;
 }
 
+.pricing-card.pro p {
+    color: #BEBEBE;
+}
+
 .pricing-card p .darker {
     color: #232323;
+}
+
+.pricing-card.pro p .darker {
+    color: #9EFF7C;
 }
 
 .pricing-card .benefits {
@@ -871,9 +879,19 @@ footer center {
     white-space: nowrap;
 }
 
-.pricing-card .pricing-button {
+.pricing-card.pro .benefits ul li {
+    color: #E4E4E4;
+}
+
+.pricing-card.lrn .pricing-button {
     background-color: #86C070;
     color: #354330;
+    font-weight: bolder;
+}
+
+.pricing-card.pro .pricing-button {
+    background-color: #354330;
+    color: #9EFF7C;
     font-weight: bolder;
 }
 
