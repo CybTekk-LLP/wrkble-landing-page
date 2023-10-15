@@ -470,6 +470,7 @@ footer center {
     overflow-x: scroll;
     overflow-y: hidden;
     border-radius: 50px;
+    scroll-snap-type: x mandatory;
 }
 
 
@@ -706,6 +707,7 @@ footer center {
     text-align: center;
     scale: 0.9;
     transition: scale 0.4s ease;
+    scroll-snap-align: start;
     margin-block-end: 5px;
 }
 
@@ -764,6 +766,7 @@ footer center {
     left: 0;
     overflow-x: scroll;
     overflow-y: hidden;
+    scroll-snap-type: x mandatory;
 }
 
 @media screen and (height < 700px) {
@@ -830,6 +833,7 @@ footer center {
 
     .cards-container .card-item {
         scale: 0.82;
+        scroll-snap-align: start
     }
 
     :is(.cards-container, .featured-container)::-webkit-scrollbar {
