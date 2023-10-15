@@ -63,13 +63,13 @@ p {
     background-color: #0e101244;
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
-    height: calc(1.3vw + 70px);
+    height: 85px;
     padding-inline: 10px;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 12;
-    padding-block: 3px;
+    padding-block-start: 2px;
     box-sizing: border-box;
     border-radius: 0 0 25px 25px;
 }
@@ -187,7 +187,7 @@ nav {
     padding-inline-start: 25px;
     padding-inline-end: 5px;
     border-radius: 30px;
-    font-size: calc(0.7vw + 10px);
+    font-size: max(calc(0.7vw + 10px), 16px);
     border: none;
     background-color: #fafffd;
 }
@@ -431,6 +431,10 @@ footer center {
     color: #0e1012;
 }
 
+.featured {
+    overflow: hidden !important;
+}
+
 .featured h2 {
     scale: 0.7;
     transform-origin: 0;
@@ -440,11 +444,12 @@ footer center {
     color: #2e2f2f;
 }
 
-:is(.about, .featured) .content-container {
+.about .content-container {
     margin-top: -30vh;
 }
 
-.about {
+.about,
+.featured {
     position: relative;
     width: 100vw;
 }
@@ -610,12 +615,14 @@ footer center {
 
 .flex2 {
     gap: 20px;
+    height: 55px;
 }
 
 .flex1 {
     justify-content: center;
     width: 100%;
     text-align: center;
+    font-size: 20px;
 }
 
 
@@ -632,7 +639,7 @@ footer center {
 .tag-container {
     display: flex;
     gap: 20px;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -643,15 +650,97 @@ footer center {
     color: #0e1012;
 }
 
+.featured .content-container {
+    margin-top: -35vh;
+}
+
+.featured-content p {
+    color: #0e1012;
+    margin: 0;
+}
+
+.featured-content p.difficulty {
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    font-weight: 500;
+    padding-block: 2px 5px;
+}
+
+.featured-content p.beginner {
+    color: #91F581;
+    background-color: #263220;
+}
+
+.featured-content h2 {
+    color: #0e1012;
+    font-size: 42px;
+    font-weight: 600;
+    transform-origin: 50%;
+}
+
 .featured-card {
+    position: relative;
+    min-width: 350px;
     width: 350px;
     max-width: 100%;
     background-color: #fafffd;
     color: #0e1012;
+    padding: 30px;
+    padding-block-start: 100px;
+    margin-block-start: 100px;
+    border-radius: 20px;
+    text-align: center;
+    scale: 0.9;
+    margin-block-end: 5px;
 }
 
+.featured-card .image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% -50%;
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.featured-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.featured-container {
+    width: 100%;
+    position: absolute;
+    min-width: auto;
+    scale: 0.8;
+    display: flex;
+    gap: 50px;
+    flex-wrap: nowrap;
+    bottom: 0;
+    left: 0;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+@media screen and (height < 700px) {
+    .featured .content-container {
+        margin-block-start: -37vh;
+    }
+
+    .small-height {
+        display: none;
+    }
+}
 
 @media screen and (orientation: portrait) {
+
     .landscape {
         display: none;
     }
@@ -697,6 +786,7 @@ footer center {
         padding-block-end: 2px;
     }
 
+    .featured-container,
     .cards-container {
         scrollbar-width: auto;
     }
@@ -705,16 +795,16 @@ footer center {
         scale: 0.82
     }
 
-    .cards-container::-webkit-scrollbar {
-        width: 5px;
+    :is(.cards-container, .featured-container)::-webkit-scrollbar {
+        width: 10px;
     }
 
-    .cards-container::-webkit-scrollbar-track {
+    :is(.cards-container, .featured-container)::-webkit-scrollbar-track {
         background: #0e1012;
         border-radius: 20px;
     }
 
-    .cards-container::-webkit-scrollbar-thumb {
+    :is(.cards-container, .featured-container)::-webkit-scrollbar-thumb {
         background: linear-gradient(to right, rgb(158, 255, 124), rgb(255, 252, 65));
         border-radius: 20px;
     }
@@ -732,11 +822,11 @@ footer center {
         backdrop-filter: blur(5px);
     }
 
-    .cards-container::-webkit-scrollbar {
+    :is(.cards-container, .featured-container)::-webkit-scrollbar {
         width: 0;
     }
 
-    .cards-container {
+    :is(.cards-container, .featured-container) {
         scrollbar-width: none
     }
 
