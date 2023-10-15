@@ -780,6 +780,16 @@ footer center {
     scroll-snap-type: x mandatory;
 }
 
+.pricing {
+    position: relative;
+}
+
+.shapes {
+    position: absolute;
+}
+
+.shape {}
+
 .pricing .content-container {
     margin-top: -35vh;
 }

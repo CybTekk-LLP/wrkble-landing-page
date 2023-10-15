@@ -25,14 +25,14 @@ $("#fullpage").fullpage({
   continuousHorizontal: false,
   scrollHorizontally: false,
   interlockedSlides: false,
-  dragAndMove: false,
+  dragAndMove: true,
   offsetSections: false,
   resetSliders: false,
-  fadingEffect: false,
-  scrollOverflow: true,
+  fadingEffect: true,
+  scrollOverflow: false,
   scrollOverflowMacStyle: false,
   scrollOverflowReset: false,
-  touchSensitivity: 15,
+  touchSensitivity: 40,
   bigSectionsDestination: null,
 
   // Accessibility
