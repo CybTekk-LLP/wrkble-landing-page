@@ -792,7 +792,7 @@ footer center {
     }
 
     .cards-container .card-item {
-        scale: 0.82
+        scale: 0.82;
     }
 
     :is(.cards-container, .featured-container)::-webkit-scrollbar {
