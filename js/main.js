@@ -32,7 +32,7 @@ $("#fullpage").fullpage({
   scrollOverflow: false,
   scrollOverflowMacStyle: false,
   scrollOverflowReset: false,
-  touchSensitivity: 40,
+  touchSensitivity: 15,
   bigSectionsDestination: null,
 
   // Accessibility

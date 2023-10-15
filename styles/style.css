@@ -784,11 +784,92 @@ footer center {
     position: relative;
 }
 
-.shapes {
+
+.shape {
+    backface-visibility: hidden;
     position: absolute;
+    animation-name: move;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    pointer-events: none;
 }
 
-.shape {}
+.shape1 {
+    top: 40%;
+    left: 66%;
+    animation-duration: 45s;
+    animation-delay: -4.2s;
+    transform-origin: -9vw 15vh;
+}
+
+.shape2 {
+    top: 28%;
+    left: 34%;
+    animation-duration: 50s;
+    animation-delay: -11s;
+    transform-origin: -4vw 11vh;
+}
+
+.shape3 {
+    top: 30%;
+    left: 96%;
+    animation-duration: 65s;
+    animation-delay: -5.2s;
+    transform-origin: -12vw 18vh;
+}
+
+.shape4 {
+    top: 10%;
+    left: 86%;
+    animation-duration: 75s;
+    animation-delay: -3.2s;
+    transform-origin: -6vw 14vh;
+}
+
+.shape5 {
+    top: 80%;
+    left: 6%;
+    animation-duration: 85s;
+    animation-delay: -7.2s;
+    transform-origin: -10vw 20vh;
+}
+
+.shape6 {
+    top: 40%;
+    left: 50%;
+    animation-duration: 65s;
+    animation-delay: -2.2s;
+    transform-origin: -3vw 10vh;
+}
+
+.shape7 {
+    top: 80%;
+    left: 20%;
+    animation-duration: 70s;
+    animation-delay: -4.2s;
+    transform-origin: -8vw 13vh;
+}
+
+.shape8 {
+    top: 40%;
+    left: 10%;
+    animation-duration: 60s;
+    animation-delay: -5.2s;
+    transform-origin: -13vw 13vh;
+}
+
+
+@keyframes move {
+    100% {
+        -webkit-transform: translate3d(0, 0, 1px) rotate(360deg);
+        -moz-transform: translate3d(0, 0, 1px) rotate(360deg);
+        -o-transform: translate3d(0, 0, 1px) rotate(360deg);
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+
 
 .pricing .content-container {
     margin-top: -35vh;
@@ -819,6 +900,7 @@ footer center {
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
+    z-index: 2;
 }
 
 .pricing-card {
