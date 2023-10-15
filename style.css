@@ -779,6 +779,21 @@ footer center {
     scroll-snap-type: x mandatory;
 }
 
+.pricing .content-container {
+    margin-top: -35vh;
+}
+
+.pricing .content-container h2 {
+    font-size: max(calc(2.8vw + 12px), 24px);
+}
+
+.pricing .content-container h3 {
+
+    width: 60%;
+    word-wrap: break-word;
+
+}
+
 @media screen and (height < 700px) {
     .featured .content-container {
         margin-block-start: -37vh;
@@ -897,5 +912,9 @@ footer center {
 
     .featured h3 {
         padding-block-start: 10px;
+    }
+
+    .pricing h3 {
+        padding-block-start: 0;
     }
 }
