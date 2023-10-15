@@ -204,12 +204,12 @@ nav {
     background-color: #fafffd;
 }
 
-.arrow {
+/* .arrow {
     margin-inline-start: 10px;
     font-weight: lighter;
     display: inline-block;
     font-family: "Noto Sans JP", sans-serif;
-}
+} */
 
 .arrow-bg {
     padding: 12px 16px;
@@ -263,6 +263,16 @@ nav {
     display: block;
     z-index: 0;
 }
+
+.center-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
 
 
 .content-container {
@@ -644,7 +654,7 @@ footer center {
     text-align: center;
 }
 
-.button-flex:hover img {
+.button-flex:is(:hover, :focus, :focus-within) img {
     rotate: 360deg;
     transition: rotate 0.2s ease-in-out;
 }

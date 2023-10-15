@@ -39,7 +39,6 @@ $("#fullpage").fullpage({
   keyboardScrolling: true,
   animateAnchor: true,
   recordHistory: true,
-  lazyLoading: true,
   afterLoad: function (anchorLink, index) {},
 
   onLeave: function (index, nextIndex, direction) {},
