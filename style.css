@@ -779,6 +779,12 @@ footer center {
     }
 }
 
+.lines {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 @media screen and (orientation: portrait) {
 
     .landscape {
