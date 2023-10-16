@@ -514,7 +514,7 @@ footer center {
     overflow-y: hidden;
     border-radius: 50px;
     scroll-snap-type: x mandatory;
-    overscroll-behavior-block: auto !important;
+    overscroll-behavior: auto !important;
 }
 
 
@@ -813,7 +813,7 @@ footer center {
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    overscroll-behavior-block: auto !important;
+    overscroll-behavior: auto !important;
 }
 
 .pricing {
@@ -962,7 +962,7 @@ footer center {
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     z-index: 2;
-    overscroll-behavior-block: auto !important;
+    overscroll-behavior: auto !important;
 }
 
 .pricing-card {
