@@ -32,6 +32,30 @@
             document.querySelector(".preloadthing").style.display = "none"
         })
     </script>
+
+    <script>
+        const base = "https://staging.wrkble.com/api/";
+        const endpoint = "courses"
+        async function customFetch(base, endpoint, method, message) {
+            await fetch(base + endpoint, {
+                method: method,
+                mode: "no-cors",
+                headers: {
+                    "Content-Type": "Application/JSON",
+                },
+                body: method !== "GET" ? JSON.stringify(message) : undefined,
+            })
+                .then((res) => {
+                    if (res.ok) {
+                        return res.json();
+                    }
+                    else throw new Error("Not 2xx response", { cause: res });
+                })
+                .then((data) => console.log(data))
+                .catch((e) => console.log(e));
+        }
+        customFetch(base, endpoint, "GET");
+    </script>
 </head>
 
 <body>
