@@ -12,7 +12,7 @@
         crossorigin>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel='stylesheet' href='./styles/fullpage.css'>
-    <link rel="stylesheet" href="./styles/fill-left.css">
+    <link rel="stylesheet" href="./styles/pace.css">
     <script src="./js/aframe.js"></script>
     <script src="./js/aframe-extras.js"></script>
     <script src="./js/orbit-controls.js"></script>
@@ -24,9 +24,19 @@
     <script src="./js/flip.js" defer></script>
     <script src="./js/cursor.js" defer></script>
     <script src="./js/pace.js"></script>
+    <script type="text/javascript">
+        paceOptions = {
+            className: 'pacepreloader'
+        }
+    </script>
 </head>
 
 <body>
+    <div class="pacepreloader">
+        <div class="wrkble-logo">
+            <img src="./assets/w.svg" fetchpriority="high" loading="eager" alt="" height="40px">
+        </div>
+    </div>
     <header id="menu">
         <nav>
             <a href="#home" aria-label="go to home screen"> <img class="landscape" src="./assets/wrkble.svg" alt="">
@@ -143,7 +153,7 @@
             <div class="featured-container">
                 <!-- SINGLE CARD -->
                 <article class="featured-card">
-                    <img src="https://picsum.photos/200/200" alt="" class="image">
+                    <img loading="lazy" src="https://picsum.photos/200/200" alt="" class="image">
                     <div class="featured-content">
                         <h2>Frontend Dev</h2>
                         <p class="tag difficulty">Beginner</p>
@@ -154,15 +164,15 @@
                             <p class="tag">CSS</p>
                             <p class="tag">JS</p>
                         </div>
-                        <a href="/" target="_blank"><button class="neon button button-flex flex1"
-                                data-cursor="pointer"><span>View
+                        <a aria-label="View Course" href="/" target="_blank"><button
+                                class="neon button button-flex flex1" data-cursor="pointer"><span>View
                                     Course</span><img src="./assets/white-arrow.svg" height="50px" alt=""></button></a>
                     </div>
                 </article>
                 <!-- END OF SINGLE CARD -->
                 <!-- SINGLE CARD -->
                 <article class="featured-card">
-                    <img src="https://picsum.photos/200/200" alt="" class="image">
+                    <img loading="lazy" src="https://picsum.photos/200/200" alt="" class="image">
                     <div class="featured-content">
                         <h2>Frontend Dev</h2>
                         <p class="tag difficulty">Intermediate</p>
@@ -173,15 +183,15 @@
                             <p class="tag">CSS</p>
                             <p class="tag">JS</p>
                         </div>
-                        <a href="/" target="_blank"><button class="neon button button-flex flex1"
-                                data-cursor="pointer"><span>View
+                        <a aria-label="View Course" href="/" target="_blank"><button
+                                class="neon button button-flex flex1" data-cursor="pointer"><span>View
                                     Course</span><img src="./assets/white-arrow.svg" height="50px" alt=""></button></a>
                     </div>
                 </article>
                 <!-- END OF SINGLE CARD -->
                 <!-- SINGLE CARD -->
                 <article class="featured-card">
-                    <img src="https://picsum.photos/200/200" alt="" class="image">
+                    <img loading="lazy" src="https://picsum.photos/200/200" alt="" class="image">
                     <div class="featured-content">
                         <h2>Frontend Dev</h2>
                         <p class="tag difficulty">Advanced</p>
@@ -192,8 +202,8 @@
                             <p class="tag">CSS</p>
                             <p class="tag">JS</p>
                         </div>
-                        <a href="/" target="_blank"><button class="neon button button-flex flex1"
-                                data-cursor="pointer"><span>View
+                        <a aria-label="View Course" href="/" target="_blank"><button
+                                class="neon button button-flex flex1" data-cursor="pointer"><span>View
                                     Course</span><img src="./assets/white-arrow.svg" height="50px" alt=""></button></a>
                     </div>
                 </article>
