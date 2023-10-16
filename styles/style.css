@@ -124,11 +124,10 @@ p {
 }
 
 .lights {
-    width: 30%;
-    height: 30%;
-    background-color: #9EFF7C;
-    border-radius: 50%;
-    filter: blur(500px);
+    width: 60%;
+    height: 60%;
+    /* background-image: url(../assets/blur.svg); */
+    background-repeat: no-repeat;
     position: absolute;
     display: block;
     left: 0;
@@ -282,7 +281,7 @@ nav {
     background-repeat: repeat-x;
     background-size: cover;
     top: calc(-2vw - 100px);
-    animation: animatedBackground 30s linear infinite reverse;
+    animation: animatedBackground 30s linear infinite;
 }
 
 @keyframes animatedBackground {
@@ -690,8 +689,8 @@ footer center {
 .tag {
     border-radius: 50px;
     padding: 1px 18px;
-    border: 1px solid #0e1012;
-    color: #0e1012;
+    border: 1px solid #BEBEBE;
+    color: #BEBEBE;
 }
 
 .featured .content-container {
@@ -699,7 +698,7 @@ footer center {
 }
 
 .featured-content p {
-    color: #0e1012;
+    color: #BEBEBE;
     margin: 0;
 }
 
@@ -728,7 +727,7 @@ footer center {
 }
 
 .featured-content h2 {
-    color: #0e1012;
+    color: #fafffd;
     font-size: 42px;
     font-weight: 600;
     transform-origin: 50%;
@@ -739,8 +738,7 @@ footer center {
     min-width: 350px;
     width: 350px;
     max-width: 100%;
-    background-color: #fafffd;
-    color: #0e1012;
+    background-color: #1c2023;
     padding: 30px;
     padding-block-start: 100px;
     margin-block-start: 100px;
@@ -1181,9 +1179,11 @@ footer center {
         scale: 0.86;
     }
 
-    .pricing-container {
+    .pricing-container,
+    .featured-container {
         justify-content: center;
     }
+
 
     .pricing-card:hover .button img {
         opacity: 1;
