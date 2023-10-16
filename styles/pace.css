@@ -17,6 +17,12 @@
   translate: 0 -80px
 }
 
+@media screen and (orientation:portrait) {
+  .wrkble-logo {
+    translate: 0 -120px
+  }
+}
+
 .pace {
   -webkit-pointer-events: none;
   pointer-events: none;
