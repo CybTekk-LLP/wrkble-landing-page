@@ -19,7 +19,7 @@
 
     <script src="./js/jquery.js" defer></script>
     <script src='./js/fullpage.js' defer></script>
-
+    <script src="./js/getCourses.js"></script>
     <script src="./js/main.js" defer></script>
     <script src="./js/flip.js" defer></script>
     <script src="./js/cursor.js" defer></script>
@@ -31,29 +31,6 @@
         window.addEventListener("load", () => {
             document.querySelector(".preloadthing").style.display = "none"
         })
-    </script>
-
-    <script>
-        const base = "https://staging.wrkble.com/api/";
-        const endpoint = "courses"
-        async function getCourses(base, endpoint, method, message) {
-            await fetch(base + endpoint, {
-                method: method,
-                headers: {
-                    "Content-Type": "Application/JSON",
-                },
-                body: method !== "GET" ? JSON.stringify(message) : undefined,
-            })
-                .then((res) => {
-                    if (res.ok) {
-                        return res.json();
-                    }
-                    else throw new Error("Not 2xx response", { cause: res });
-                })
-                .then((data) => console.log(data))
-                .catch((e) => console.log(e));
-        }
-        getCourses(base, endpoint, "GET");
     </script>
 </head>
 
@@ -179,15 +156,17 @@
                     <img src="https://picsum.photos/200/200" alt="" class="image">
                     <div class="featured-content">
                         <h2>Frontend Dev</h2>
-                        <p class="tag beginner difficulty">Beginner</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, possimus?</p>
+                        <p class="tag difficulty">Beginner</p>
+                        <p class="course-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                            possimus?</p>
                         <div class="tag-container">
                             <p class="tag">HTML</p>
                             <p class="tag">CSS</p>
                             <p class="tag">JS</p>
                         </div>
-                        <button class="neon button button-flex flex1" data-cursor="pointer"><span>View Course</span><img
-                                src="./assets/white-arrow.svg" height="50px" alt=""></button>
+                        <a href="/" target="_blank"><button class="neon button button-flex flex1"
+                                data-cursor="pointer"><span>View
+                                    Course</span><img src="./assets/white-arrow.svg" height="50px" alt=""></button></a>
                     </div>
                 </article>
                 <!-- END OF SINGLE CARD -->
@@ -196,15 +175,17 @@
                     <img src="https://picsum.photos/200/200" alt="" class="image">
                     <div class="featured-content">
                         <h2>Frontend Dev</h2>
-                        <p class="tag intermediate difficulty">Intermediate</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, possimus?</p>
+                        <p class="tag difficulty">Intermediate</p>
+                        <p class="course-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                            possimus?</p>
                         <div class="tag-container">
                             <p class="tag">HTML</p>
                             <p class="tag">CSS</p>
                             <p class="tag">JS</p>
                         </div>
-                        <button class="neon button button-flex flex1" data-cursor="pointer"><span>View
-                                Course</span><img src="./assets/white-arrow.svg" height="50px" alt=""></button>
+                        <a href="/" target="_blank"><button class="neon button button-flex flex1"
+                                data-cursor="pointer"><span>View
+                                    Course</span><img src="./assets/white-arrow.svg" height="50px" alt=""></button></a>
                     </div>
                 </article>
                 <!-- END OF SINGLE CARD -->
@@ -213,15 +194,17 @@
                     <img src="https://picsum.photos/200/200" alt="" class="image">
                     <div class="featured-content">
                         <h2>Frontend Dev</h2>
-                        <p class="tag advanced difficulty">Advanced</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, possimus?</p>
+                        <p class="tag difficulty">Advanced</p>
+                        <p class="course-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi,
+                            possimus?</p>
                         <div class="tag-container">
                             <p class="tag">HTML</p>
                             <p class="tag">CSS</p>
                             <p class="tag">JS</p>
                         </div>
-                        <button class="neon button button-flex flex1" data-cursor="pointer"><span>View Course</span><img
-                                src="./assets/white-arrow.svg" height="50px" alt=""></button>
+                        <a href="/" target="_blank"><button class="neon button button-flex flex1"
+                                data-cursor="pointer"><span>View
+                                    Course</span><img src="./assets/white-arrow.svg" height="50px" alt=""></button></a>
                     </div>
                 </article>
                 <!-- END OF SINGLE CARD -->

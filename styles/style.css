@@ -124,14 +124,19 @@ p {
 }
 
 .lights {
-    width: 60%;
-    height: 60%;
-    /* background-image: url(../assets/blur.svg); */
+    height: 33%;
+    width: 33%;
+    background-image: url(../assets/blur.webp);
     background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     display: block;
     left: 0;
+    opacity: 0.5;
+    /* filter: blur(3); */
     pointer-events: none;
+    z-index: 0;
+    scale: 5;
 }
 
 .bottom {
@@ -144,7 +149,6 @@ p {
 
 .center-left {
     top: 50%;
-    filter: blur(200px);
 }
 
 .flip .word2:has(.letter.in)::after {
@@ -688,6 +692,7 @@ footer center {
     gap: 20px;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    margin-block-end: 5px;
 }
 
 .tag {
@@ -1094,6 +1099,10 @@ footer center {
     top: 0;
 }
 
+section.pricing {
+    overflow: visible !important;
+}
+
 @media screen and (orientation: portrait) {
 
     .landscape {
@@ -1174,6 +1183,13 @@ footer center {
 }
 
 @media screen and (orientation: landscape) {
+    .lights {
+        left: 40vw
+    }
+
+    section.pricing .lights {
+        top: 0;
+    }
 
     .featured-card:hover {
         scale: 0.93;
