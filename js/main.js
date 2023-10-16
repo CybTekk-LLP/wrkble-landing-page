@@ -5,7 +5,7 @@ $("#fullpage").fullpage({
   slideSelector: ".horizontal-scrolling",
   navigation: false,
   slidesNavigation: true,
-  normalScrollElements: ".card-item, .featured-content, .pricing-card",
+  normalScrollElements: ".card-item, .featured-content, .benefits",
   controlArrows: false,
   anchors: ["home", "about", "featured", "pricing", "contact"],
   menu: "#menu",
