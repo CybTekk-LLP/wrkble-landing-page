@@ -273,6 +273,28 @@ nav {
     position: relative;
 }
 
+.center-container::after {
+    position: absolute;
+    content: "";
+    width: 100vw;
+    height: calc(5vw + 2vh + 10px);
+    background-image: url(../assets/Marquee.svg);
+    background-repeat: repeat-x;
+    background-size: cover;
+    top: calc(-2vw - 100px);
+    animation: animatedBackground 30s linear infinite reverse;
+}
+
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0;
+    }
+
+    to {
+        background-position: 100% 0;
+    }
+}
+
 .content-container {
     position: relative;
     display: grid;
@@ -489,6 +511,7 @@ footer center {
     overflow-y: hidden;
     border-radius: 50px;
     scroll-snap-type: x mandatory;
+    overscroll-behavior-block: auto !important;
 }
 
 
@@ -786,6 +809,7 @@ footer center {
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
+    overscroll-behavior-block: auto !important;
 }
 
 .pricing {
@@ -934,6 +958,7 @@ footer center {
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     z-index: 2;
+    overscroll-behavior-block: auto !important;
 }
 
 .pricing-card {
