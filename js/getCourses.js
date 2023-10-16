@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   let i = 0;
   document.querySelectorAll(".featured-card").forEach((card) => {
     card.querySelector("h2").textContent = courses[i].title
-      .split(" ", 1)
+      .split(" ", 2)
       .join(" ");
     card.querySelector(".difficulty").textContent =
       courses[i].difficulty.toString().charAt(0).toUpperCase() +

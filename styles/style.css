@@ -484,10 +484,6 @@ footer center {
     overflow: hidden !important;
 }
 
-.featured h2 {
-    scale: 0.7;
-    transform-origin: 0;
-}
 
 .about h3 {
     color: #2e2f2f;
@@ -737,9 +733,10 @@ footer center {
 
 .featured-content h2 {
     color: #fafffd;
-    font-size: 42px;
+    font-size: 32px;
     font-weight: 600;
-    transform-origin: 50%;
+    margin-block: 10px 5px;
+    white-space: nowrap;
 }
 
 .featured-card {

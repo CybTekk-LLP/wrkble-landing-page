@@ -24,14 +24,6 @@
     <script src="./js/flip.js" defer></script>
     <script src="./js/cursor.js" defer></script>
     <script src="./js/pace.js"></script>
-    <script type="text/javascript">
-        paceOptions = {
-            className: 'preloadthing'
-        }
-        window.addEventListener("load", () => {
-            document.querySelector(".preloadthing").style.display = "none"
-        })
-    </script>
 </head>
 
 <body>
@@ -47,9 +39,7 @@
         <div id="cursor"></div>
         <div id="cursor-border"></div>
     </header>
-    <div class="preloadthing"
-        style="z-index: 99; display: block; position: absolute; height: 100vh; width: 100vw; background-color: black; top: 0;">
-    </div>
+
     <div id="fullpage">
         <section class="vertical-scrolling home">
             <div class="content-container">
