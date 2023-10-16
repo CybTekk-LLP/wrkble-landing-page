@@ -331,6 +331,10 @@ footer ul {
     padding-inline-start: 20px;
 }
 
+footer ul li a {
+    color: #0e1012;
+}
+
 footer center {
     font-size: max(calc(0.6vw + 5px), 12px);
 }

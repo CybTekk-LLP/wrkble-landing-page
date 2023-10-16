@@ -36,7 +36,7 @@
     <script>
         const base = "https://staging.wrkble.com/api/";
         const endpoint = "courses"
-        async function customFetch(base, endpoint, method, message) {
+        async function getCourses(base, endpoint, method, message) {
             await fetch(base + endpoint, {
                 method: method,
                 mode: "no-cors",
@@ -54,7 +54,7 @@
                 .then((data) => console.log(data))
                 .catch((e) => console.log(e));
         }
-        customFetch(base, endpoint, "GET");
+        getCourses(base, endpoint, "GET");
     </script>
 </head>
 
@@ -292,17 +292,23 @@
 
                 <div class="footer-wrapper">
                     <ul class="start landscape">
-                        <li><span class="landscape button-flex">linkedIn <img src="./assets/white-arrow.svg"
-                                    height="30px" alt=""></span></li>
-                        <li><span class="landscape button-flex">instagram <img src="./assets/white-arrow.svg"
-                                    height="30px" alt=""></span></li>
-                        <li><span class="landscape button-flex">twitter <img src="./assets/white-arrow.svg"
-                                    height="30px" alt=""></span></li>
+                        <li><a href="https://www.linkedin.com/company/cybtekk/" target="_blank"><span
+                                    class="landscape button-flex">linkedIn <img src="./assets/white-arrow.svg"
+                                        height="30px" alt=""></span></a></li>
+                        <li><a href="https://www.instagram.com/wrkble/" target="_blank"><span
+                                    class="landscape button-flex">instagram <img src="./assets/white-arrow.svg"
+                                        height="30px" alt=""></span></a></li>
+                        <li><a href="https://twitter.com/wrkble" target="_blank"><span
+                                    class="landscape button-flex">twitter <img src="./assets/white-arrow.svg"
+                                        height="30px" alt=""></span></a></li>
                     </ul>
                     <ul class="start portrait">
-                        <li><span><img height="20px" src="./assets/linkedin.svg" alt=""></span></li>
-                        <li><span><img height="20px" src="./assets/instagram.svg" alt=""></span></li>
-                        <li><span><img height="20px" src="./assets/twitter.svg" alt=""></span></li>
+                        <li><a href="https://www.linkedin.com/company/cybtekk/" target="_blank"><span><img height="20px"
+                                        src="./assets/linkedin.svg" alt=""></span></a></li>
+                        <li><a href="https://www.instagram.com/wrkble/" target="_blank"><span><img height="20px"
+                                        src="./assets/instagram.svg" alt=""></span></a></li>
+                        <li><a href="https://twitter.com/wrkble" target="_blank"><span><img height="20px"
+                                        src="./assets/twitter.svg" alt=""></span></a></li>
                     </ul>
                     <ul class="center
                     ">
