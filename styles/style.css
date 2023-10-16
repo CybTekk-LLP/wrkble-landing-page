@@ -275,7 +275,7 @@ nav {
 .center-container::after {
     position: absolute;
     content: "";
-    width: 100vw;
+    width: 100%;
     height: calc(5vw + 2vh + 10px);
     background-image: url(../assets/Marquee.svg);
     background-repeat: repeat-x;
