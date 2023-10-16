@@ -39,7 +39,6 @@
         async function getCourses(base, endpoint, method, message) {
             await fetch(base + endpoint, {
                 method: method,
-                mode: "no-cors",
                 headers: {
                     "Content-Type": "Application/JSON",
                 },
