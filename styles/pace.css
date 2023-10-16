@@ -14,7 +14,7 @@
   width: 100%;
   align-items: center;
   justify-content: center;
-  translate: 0 calc(-40px - 6vh)
+  translate: 0 -80px
 }
 
 .pace {
