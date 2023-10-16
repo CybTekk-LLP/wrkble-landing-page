@@ -386,7 +386,7 @@ footer center {
     background-image: url(../assets/JoinWrkble.svg);
     background-size: 100%;
     text-decoration: none;
-    animation: spin 3s linear 0.5s infinite;
+    animation: spin 6s linear 0.5s infinite;
 }
 
 /* .go-to-next-page:hover,
@@ -1068,6 +1068,58 @@ footer center {
 .pricing-card.pro {
     background-image: linear-gradient(to right bottom, rgb(28, 36, 25), rgb(30, 41, 27));
     border: 2px solid #9EFF7C;
+}
+
+.shake {
+    animation: shaking 5s ease-in-out 0s infinite alternate;
+}
+
+.antishake {
+    animation: antishaking 5s ease-in-out 0s infinite alternate;
+}
+
+@keyframes shaking {
+    0% {
+        rotate: -15deg;
+    }
+
+    5% {
+        rotate: -20deg;
+    }
+
+    15% {
+        rotate: -10deg;
+    }
+
+    20% {
+        rotate: -15deg;
+    }
+
+    100% {
+        rotate: -15deg;
+    }
+}
+
+@keyframes antishaking {
+    0% {
+        rotate: 5deg;
+    }
+
+    5% {
+        rotate: 10deg;
+    }
+
+    15% {
+        rotate: 15deg;
+    }
+
+    20% {
+        rotate: 5deg;
+    }
+
+    100% {
+        rotate: 5deg;
+    }
 }
 
 @media screen and (height < 700px) {
