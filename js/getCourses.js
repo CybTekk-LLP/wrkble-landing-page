@@ -36,8 +36,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       j++;
     });
     card.querySelector("img").src = courses[i].thumbnail;
-    card.querySelector("a").href =
-      "https://staging.wrkble.com/api/courses/" + courses[i].id;
+    card.querySelector("a").href = "https://wrkble.com/course/" + courses[i].id;
     // console.log(courses[i], card);
     i++;
   });
