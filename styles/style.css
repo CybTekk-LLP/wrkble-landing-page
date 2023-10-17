@@ -1078,6 +1078,10 @@ footer center {
     animation: antishaking 5s ease-in-out 0s infinite alternate;
 }
 
+.featured .content-container h2 {
+    font-size: max(calc(2.8vw + 12px), 24px);
+}
+
 @keyframes shaking {
     0% {
         rotate: -15deg;
@@ -1150,6 +1154,17 @@ footer center {
 
 section.pricing {
     overflow: visible !important;
+}
+
+@media screen and (height < 700px) and (orientation:portrait) {
+
+    .featured .content-container {
+        margin-block-start: -35vh;
+    }
+
+    .pricing .content-container {
+        margin-block-start: -35vh;
+    }
 }
 
 @media screen and (orientation: portrait) {
