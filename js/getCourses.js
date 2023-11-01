@@ -35,7 +35,8 @@ document.addEventListener("DOMContentLoaded", async () => {
       tag.textContent = courses[i].tags[j].slice(0, 7);
       j++;
     });
-    card.querySelector("img").src = courses[i].thumbnail;
+    card.querySelector("img").src =
+      "https://staging.wrkble.com" + courses[i].thumbnail;
     card.querySelector("a").href = "https://wrkble.com/course/" + courses[i].id;
     // console.log(courses[i], card);
     i++;
