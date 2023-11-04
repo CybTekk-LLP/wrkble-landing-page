@@ -1314,6 +1314,10 @@ section.pricing {
         scrollbar-width: auto;
     }
 
+    .pricing-card {
+        margin-bottom: 25px;
+    }
+
     .cards-container .card-item {
         scale: 0.82;
         scroll-snap-align: center
