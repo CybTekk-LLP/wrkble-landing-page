@@ -1263,11 +1263,6 @@ section.pricing {
         scale: 0.86;
     }
 
-    .pricing-container,
-    .featured-container {
-        justify-content: center;
-    }
-
 
     .pricing-card:hover .button img {
         opacity: 1;
@@ -1282,14 +1277,6 @@ section.pricing {
         backdrop-filter: blur(5px);
     }
 
-    :is(.cards-container, .featured-container, .pricing-container)::-webkit-scrollbar {
-        width: 0;
-    }
-
-    :is(.cards-container, .featured-container, .pricing-container) {
-        scrollbar-width: none
-    }
-
     h3 {
         padding-block-start: 30px;
     }
@@ -1300,5 +1287,49 @@ section.pricing {
 
     .pricing h3 {
         padding-block-start: 0;
+    }
+}
+
+@media screen and (orientation: landscape) and (width > 1300px) {
+
+    .pricing-container,
+    .featured-container {
+        justify-content: center;
+    }
+
+    :is(.cards-container, .featured-container, .pricing-container)::-webkit-scrollbar {
+        width: 0;
+    }
+
+    :is(.cards-container, .featured-container, .pricing-container) {
+        scrollbar-width: none
+    }
+}
+
+@media screen and (orientation: landscape) and (width < 1300px) {
+
+    .featured-container,
+    .cards-container,
+    .pricing-container {
+        scrollbar-width: auto;
+    }
+
+    .cards-container .card-item {
+        scale: 0.82;
+        scroll-snap-align: center
+    }
+
+    :is(.cards-container, .featured-container, .pricing-container)::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    :is(.cards-container, .featured-container, .pricing-container)::-webkit-scrollbar-track {
+        background: #0e1012;
+        border-radius: 20px;
+    }
+
+    :is(.cards-container, .featured-container, .pricing-container)::-webkit-scrollbar-thumb {
+        background: linear-gradient(to right, rgb(158, 255, 124), rgb(255, 252, 65));
+        border-radius: 20px;
     }
 }
