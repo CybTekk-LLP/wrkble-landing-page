@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="cMS1v8p5GxOPOxQUj6ffcKdnlGpsMPnwnu4N6ykA5v0" />
     <title>Wrkble</title>
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +18,6 @@
     <script src="./js/aframe.js"></script>
     <script src="./js/aframe-extras.js"></script>
     <script src="./js/orbit-controls.js"></script>
-
     <script src="./js/jquery.js" defer></script>
     <script src='./js/fullpage.js' defer></script>
     <script src="./js/getCourses.js"></script>
@@ -46,6 +46,14 @@
             }
         }
     </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-9YSQ4BXT83"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-9YSQ4BXT83');
+    </script>
 </head>
 
 <body>
@@ -156,6 +164,8 @@
                         animi sapiente incidunt quae consectetur porro totam voluptas maxime natus.</span></h3>
             </div>
             <div class="cards-container">
+                <a class="goUp" style="display: none;" href="#home"></a>
+                <a class="goDown" style="display: none;" href="#featured"></a>
                 <div class="card2 card-item" data-cursor="pointer4">
                     <h4>1 on 1 mentoring</h4>
                     <p>We help you achieve your career goals by combining courses to create a personalized learning
@@ -184,6 +194,8 @@
                 </h3>
             </div>
             <div class="featured-container">
+                <a class="goUp" style="display: none;" href="#about"></a>
+                <a class="goDown" style="display: none;" href="#pricing"></a>
                 <!-- SINGLE CARD -->
                 <article class="featured-card">
                     <img loading="lazy" src="https://picsum.photos/200/200" alt="" class="image">
@@ -251,6 +263,8 @@
                 </h3>
             </div>
             <div class="pricing-container">
+                <a class="goUp" style="display: none;" href="#featured"></a>
+                <a class="goDown" style="display: none;" href="#contact"></a>
                 <article class="lrn pricing-card">
                     <h4 class="special-font">lrn</h4>
                     <h2>$9.99 <span class="smaller">/mo</span></h2>
@@ -343,14 +357,14 @@
                         </a>
                     </div>
                 </div>
-                <center id="insert-year">&copy;
+                <div id="insert-year" class="center">&copy;
                     <script>document.getElementById('insert-year').appendChild(document.createTextNode(new Date().getFullYear()))</script>
                     Wrkble. All Rights Reserved.
-                </center>
+                </div>
             </footer>
         </section>
     </div>
+    <script src="./js/touch.js"></script>
 </body>
-
 
 </html>

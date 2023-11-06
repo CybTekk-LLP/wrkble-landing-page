@@ -20,6 +20,10 @@ a {
     text-decoration: none;
 }
 
+.none {
+    display: none;
+}
+
 button {
     cursor: none;
 }
@@ -339,7 +343,8 @@ footer ul li a {
     color: #0e1012;
 }
 
-footer center {
+footer div.center {
+    text-align: center;
     font-size: max(calc(0.6vw + 5px), 12px);
 }
 
