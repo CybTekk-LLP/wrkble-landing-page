@@ -22,7 +22,7 @@ requestAnimationFrame(function loop() {
 document.querySelectorAll("[data-cursor]").forEach((item) => {
   item.addEventListener("mouseover", (e) => {
     if (item.dataset.cursor === "pointer") {
-      cursorBorder.style.backgroundColor = "rgba(255, 255, 255, .6)";
+      cursorBorder.style.backgroundColor = "#CBF65977";
       cursorBorder.style.setProperty("--size", "30px");
     }
     if (item.dataset.cursor === "pointer2") {
