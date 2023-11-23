@@ -3,11 +3,13 @@ document.addEventListener("DOMContentLoaded", () => {
   let pane = document.querySelector(".pane");
   input.addEventListener("change", () => {
     if (input.checked) {
-      pane.style.display = "block";
-      pane.style.opacity = 1;
+      //   pane.style.display = "block";
+      pane.classList.add("slideIn");
     } else {
-      pane.style.display = "none";
-      pane.style.opacity = 0;
+      pane.classList.remove("slideIn");
+      setTimeout(() => {
+        // pane.style.display = "none";
+      }, 3000);
     }
   });
 

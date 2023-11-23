@@ -498,6 +498,27 @@ label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
     max-inline-size: 100%;
     background-color: #0e1012;
     inset-inline-end: 0;
+    border: 1px solid #141515;
+    transition: translate 0.3s ease-in;
+}
+
+.pane.slideIn {
+    translate: 0 0 !important;
+}
+
+.hamburger-options {
+    list-style-type: none;
+    display: block;
+    color: #fafffd;
+    font-size: max(calc(2.1vw + 24px), 32px);
+    padding-block-start: 140px;
+    line-height: 2;
+    transition: color 0.3s ease-in-out;
+}
+
+.hamburger-options li:hover {
+    color: #9EFF7C;
+    font-family: "Fugaz One", sans-serif;
 }
 
 .cards {
@@ -1328,13 +1349,21 @@ section.pricing {
     .pricing-card {
         margin-bottom: 25px;
     }
-
-
 }
 
 @media screen and (orientation: landscape) {
     .lights {
         left: 40vw
+    }
+
+    .pane {
+        border-bottom-left-radius: 50px;
+        border-top-left-radius: 50px;
+    }
+
+    .hamburger-options {
+        padding-inline-start: 50px;
+        line-height: 1.5;
     }
 
     section.pricing .lights {
