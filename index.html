@@ -121,8 +121,11 @@
                     unstoppable
                     now.
                     <br><br>
-                    <button class="button neon button-flex flex2" data-cursor="pointer"
-                        onclick='window.open(!!localStorage.getItem("userType") ? "https\://wrkble.com/register" : "https\://wrkble.com/dashboard", "_blank")'>
+                    <button class="button neon button-flex flex2" data-cursor="pointer" onclick='
+                        if(!localStorage.getItem("userType"))
+                        window.open("https\://wrkble.com/register")
+                     else  window.open("https\://wrkble.com/dashboard", "_blank")
+                            '>
                         Join Now
                         <img src="./assets/white-arrow.svg" height="50px" alt="">
                     </button>
