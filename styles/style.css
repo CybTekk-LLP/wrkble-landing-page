@@ -198,7 +198,18 @@ nav {
     justify-content: space-between;
     padding-block-start: 12px;
     padding-inline: 45px;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
 
+header::selection {
+    background-color: #9fff7c00 !important;
+}
+
+nav>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .button {
@@ -346,6 +357,7 @@ footer ul li a {
 footer div.center {
     text-align: center;
     font-size: max(calc(0.6vw + 5px), 12px);
+    translate: 0 13px;
 }
 
 footer li:hover {
@@ -367,6 +379,66 @@ footer center {
     padding-block-start: 20px;
 }
 
+label.check-nav {
+    display: flex;
+    flex-direction: column;
+    width: 70px;
+    cursor: pointer;
+    scale: 0.6;
+    transform-origin: right;
+}
+
+label.check-nav>span {
+    background: #fff;
+    border-radius: 10px;
+    height: 4px;
+    margin: 8px 0;
+    transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+
+}
+
+
+label.check-nav>span:nth-of-type(1) {
+    width: 50%;
+
+}
+
+label.check-nav>span:nth-of-type(2) {
+    width: 100%;
+}
+
+
+label.check-nav>span:nth-of-type(3) {
+    width: 75%;
+
+}
+
+
+label.check-nav>input[type="checkbox"] {
+    display: none;
+}
+
+
+label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(1) {
+    transform-origin: bottom;
+    transform: rotatez(45deg) translate(8px, 0px)
+}
+
+
+label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(2) {
+
+    transform-origin: top;
+    transform: rotatez(-45deg)
+}
+
+
+label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
+
+    transform-origin: bottom;
+    width: 50%;
+    transform: translate(30px, -11px) rotatez(45deg);
+
+}
 
 
 .difference {
