@@ -24,6 +24,8 @@
     <script src="./js/main.js" defer></script>
     <script src="./js/flip.js" defer></script>
     <script src="./js/cursor.js" defer></script>
+    <script src="./js/touch.js" defer></script>
+    <script src="./js/hamburger.js" defer></script>
     <script src="./js/pace.js"></script>
     <script type="text/javascript">
         paceOptions = {
@@ -83,8 +85,8 @@
                 <img class="portrait logo-mini" src="./assets/w.svg" alt="" height="20px"></a>
 
             <div>
-                <a href="https://wrkble.com/login" target="_blank"><button class="button button-flex flex2"
-                        data-cursor="pointer">
+                <a class="link-changer" href="https://wrkble.com/login" target="_blank"><button
+                        class="button button-flex flex2" data-cursor="pointer">
                         Sign In
                         <img src="./assets/off-white-arrow.svg" height="50px" alt="">
                     </button></a>
@@ -99,7 +101,14 @@
         <div id="cursor"></div>
         <div id="cursor-border"></div>
     </header>
-
+    <div class="pane" style="position: fixed; display: none; opacity: 0;">
+        <ul class="hamburger-options">
+            <li>About</li>
+            <li>Mentoring</li>
+            <li>Pathways</li>
+            <li>Commitment</li>
+        </ul>
+    </div>
     <div id="fullpage">
         <section class="vertical-scrolling home">
             <div class="content-container">
@@ -113,7 +122,7 @@
                     now.
                     <br><br>
                     <button class="button neon button-flex flex2" data-cursor="pointer"
-                        onclick='window.open("https\://wrkble.com/register", "_blank")'>
+                        onclick='window.open(!!localStorage.getItem("userType") ? "https\://wrkble.com/register" : "https\://wrkble.com/dashboard", "_blank")'>
                         Join Now
                         <img src="./assets/white-arrow.svg" height="50px" alt="">
                     </button>
@@ -376,7 +385,7 @@
             </footer>
         </section>
     </div>
-    <script src="./js/touch.js"></script>
+
 </body>
 
 </html>
