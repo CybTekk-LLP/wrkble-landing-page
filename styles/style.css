@@ -496,9 +496,10 @@ label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
     block-size: 100vh;
     inline-size: 450px;
     max-inline-size: 100%;
-    background-color: #0e1012;
+    background-color: #0e101244;
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     inset-inline-end: 0;
-    border: 1px solid #141515;
     transition: translate 0.3s ease-in;
 }
 
@@ -513,12 +514,15 @@ label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
     font-size: max(calc(2.1vw + 24px), 32px);
     padding-block-start: 140px;
     line-height: 2;
-    transition: color 0.3s ease-in-out;
+    font-weight: bolder;
+}
+
+.hamburger-options li {
+    transition: all 0.3s ease-in-out;
 }
 
 .hamburger-options li:hover {
     color: #9EFF7C;
-    font-family: "Fugaz One", sans-serif;
 }
 
 .cards {
