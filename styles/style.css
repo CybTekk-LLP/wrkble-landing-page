@@ -517,12 +517,36 @@ label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
     font-weight: bolder;
 }
 
-.hamburger-options li {
-    transition: all 0.3s ease-in-out;
+.pane .hamburger-options li {
+    display: block;
+    transform: translateX(100%);
+    transform-origin: bottom left;
+    will-change: transform;
+    transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1), color 0.3s ease-in;
 }
 
-.hamburger-options li:hover {
+.pane.slideIn .hamburger-options li {
+    transform: translateX(0);
+}
+
+.pane .hamburger-options li:hover {
     color: #9EFF7C;
+}
+
+.pane .hamburger-options li:nth-child(1) {
+    transition-delay: 300ms;
+}
+
+.pane .hamburger-options li:nth-child(2) {
+    transition-delay: 350ms;
+}
+
+.pane .hamburger-options li:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.pane .hamburger-options li:nth-child(4) {
+    transition-delay: 450ms;
 }
 
 .cards {
