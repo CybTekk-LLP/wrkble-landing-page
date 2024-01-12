@@ -530,7 +530,18 @@ label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
 }
 
 .pane .hamburger-options li:hover {
-    color: #9EFF7C;
+    animation: hoveraction 0.2s ease-in-out 1 both;
+}
+
+@keyframes hoveraction {
+    0% {
+        scale: 1
+    }
+
+    100% {
+        scale: 1.05;
+        translate: 1px 1px;
+    }
 }
 
 .pane .hamburger-options li:nth-child(1) {
