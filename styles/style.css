@@ -8,7 +8,7 @@ body {
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     background-color: #0e1012;
-    cursor: none;
+    cursor: default;
 }
 
 section {
@@ -16,7 +16,7 @@ section {
 }
 
 a {
-    cursor: none;
+    cursor: pointer;
     text-decoration: none;
 }
 
@@ -25,7 +25,7 @@ a {
 }
 
 button {
-    cursor: none;
+    cursor: pointer;
 }
 
 ::selection {
@@ -452,7 +452,7 @@ label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
 .go-to-next-page {
     position: absolute;
     z-index: 2;
-    cursor: none;
+    cursor: default;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -511,10 +511,10 @@ label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
     list-style-type: none;
     display: block;
     color: #fafffd;
-    font-size: max(calc(2.1vw + 24px), 32px);
+    font-size: max(calc(1.5vw + 16px), 24px);
     padding-block-start: 140px;
     line-height: 2;
-    font-weight: bolder;
+    font-weight: 400;
 }
 
 .pane .hamburger-options li {
@@ -558,7 +558,7 @@ label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
 
 
 .cards a {
-    cursor: none;
+    cursor: default;
 }
 
 .cards .pro {
