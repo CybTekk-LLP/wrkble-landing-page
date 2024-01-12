@@ -512,7 +512,7 @@ label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
     display: block;
     color: #fafffd;
     font-size: max(calc(1.5vw + 16px), 24px);
-    padding-block-start: 140px;
+    padding-block-start: 120px;
     line-height: 2;
     font-weight: 400;
 }
