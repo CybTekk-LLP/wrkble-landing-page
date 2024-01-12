@@ -254,7 +254,7 @@ nav>div {
     left: -5px;
     width: 10px;
     height: 10px;
-    background-color: #9EFF7C;
+    /* background-color: #9EFF7C; */
     border-radius: 50%;
     pointer-events: none;
     z-index: 999;
