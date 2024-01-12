@@ -21,9 +21,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   await getCourses(base, endpoint, "GET");
   let i = 0;
   document.querySelectorAll(".featured-card").forEach((card) => {
-    card.querySelector("h2").textContent = courses[i].title
-      .split(" ", 2)
-      .join(" ");
+    card.querySelector("h2").textContent = courses[i].title;
     card.querySelector(".difficulty").textContent =
       courses[i].difficulty.toString().charAt(0).toUpperCase() +
       courses[i].difficulty.slice(1);
