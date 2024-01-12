@@ -549,6 +549,26 @@ label.check-nav>input[type="checkbox"]:checked~span:nth-of-type(3) {
     transition-delay: 450ms;
 }
 
+.pane .hamburger-options li:nth-child(5) {
+    transition-delay: 500ms;
+}
+
+.pane .hamburger-options li:nth-child(6) {
+    transition-delay: 550ms;
+}
+
+.pane .hamburger-options li:nth-child(7) {
+    transition-delay: 600ms;
+}
+
+.pane .hamburger-options li:nth-child(8) {
+    transition-delay: 650ms;
+}
+
+.pane .hamburger-options li:nth-child(9) {
+    transition-delay: 700ms;
+}
+
 .cards {
     position: absolute;
     left: 6%;
