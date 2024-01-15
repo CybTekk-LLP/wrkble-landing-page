@@ -360,6 +360,10 @@ footer div.center {
     translate: 0 13px;
 }
 
+footer ul.center.landscape li a img {
+    translate: -5px 5px;
+}
+
 footer li:hover {
     display: block;
     position: relative;
